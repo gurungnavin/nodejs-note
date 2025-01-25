@@ -89,16 +89,16 @@ Before you dive into backend development, you should first consider learning or 
    - RESTful API: Follows REST principles, uses HTTP methods (GET, POST, PUT DELETE), and is stateless (each request is independent).
 
  - Why RESTful APIs Are Important
- 1. Simple: Uses standard HTTP methods and URLs.
- 2. Scalable: Stateless design handles many users efficiently.
- 3. Flexible: Works for small to large systems.
- 4. Widely Supported: Most languages and frameworks support it.
+   1. Simple: Uses standard HTTP methods and URLs.
+   2. Scalable: Stateless design handles many users efficiently.
+   3. Flexible: Works for small to large systems.
+   4. Widely Supported: Most languages and frameworks support it.
 
  - Best Practices for RESTful APIs
-  - Statelessness: Each request must include all needed info.
-  - Security: Always use HTTPS.
-  - Error Handling: Use proper HTTP status codes (e.g., 200 OK, 404 Not Found).
-  - Versioning: Use versions (e.g., /v1/users) to avoid breaking changes.
+   - Statelessness: Each request must include all needed info.
+   - Security: Always use HTTPS.
+   - Error Handling: Use proper HTTP status codes (e.g., 200 OK, 404 Not Found).
+   - Versioning: Use versions (e.g., /v1/users) to avoid breaking changes.
 
  ## Example
  - Fetch All Users:
