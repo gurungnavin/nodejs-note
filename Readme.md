@@ -147,8 +147,56 @@ Before you dive into backend development, you should first consider learning or 
 ---
 
 ## CRUD
-*(Add content here)*
+ ### CRUD: Create, Read, Update, Delete
 
+### What is CRUD?
+- **CRUD** stands for the four basic operations you can perform on data:
+  1. **Create**: Add new data.
+  2. **Read**: Retrieve or fetch data.
+  3. **Update**: Modify existing data.
+  4. **Delete**: Remove data.
+
+---
+
+### CRUD in RESTful APIs
+| **CRUD Operation** | **HTTP Method** | **Example**                     |
+|---------------------|-----------------|---------------------------------|
+| **Create**          | `POST`          | Add a new user: `POST /users`   |
+| **Read**            | `GET`           | Fetch all users: `GET /users`   |
+| **Update**          | `PUT` or `PATCH`| Update a user: `PUT /users/1`   |
+| **Delete**          | `DELETE`        | Delete a user: `DELETE /users/1`|
+
+---
+
+### CRUD in Databases
+| **CRUD Operation** | **SQL Command** | **Example**                                  |
+|---------------------|-----------------|---------------------------------------------|
+| **Create**          | `INSERT`        | `INSERT INTO users (name) VALUES ('John');` |
+| **Read**            | `SELECT`        | `SELECT * FROM users;`                      |
+| **Update**          | `UPDATE`        | `UPDATE users SET name='Jane' WHERE id=1;`  |
+| **Delete**          | `DELETE`        | `DELETE FROM users WHERE id=1;`             |
+
+---
+
+### Why is CRUD Important?
+1. **Foundation of Applications**: Almost every app involves CRUD operations.
+2. **Standardized Operations**: Provides a clear and consistent way to interact with data.
+3. **Efficiency**: Optimized for performance in databases and APIs.
+
+---
+
+### Key Points to Remember
+- CRUD stands for **Create, Read, Update, Delete**.
+- In RESTful APIs:
+  - `POST` → Create
+  - `GET` → Read
+  - `PUT`/`PATCH` → Update
+  - `DELETE` → Delete
+- In databases:
+  - `INSERT` → Create
+  - `SELECT` → Read
+  - `UPDATE` → Update
+  - `DELETE` → Delete
 ---
 
 ## CORS
