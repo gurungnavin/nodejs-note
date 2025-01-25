@@ -14,7 +14,7 @@ Before you dive into backend development, you should first consider learning or 
 
 ---
 
-## HTTP/HTTPS 🌐
+## HTTP/HTTPS
 
 ### Introduction
 - **HTTP**: The language apps and servers use to communicate.
