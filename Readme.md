@@ -42,37 +42,37 @@ Before you dive into backend development, you should first consider learning or 
 
 ---
 
-## RESTful APIs 🔗
+## RESTful APIs
 *(Add content here)*
 
 ---
 
-## CRUD 📝
+## CRUD
 *(Add content here)*
 
 ---
 
-## CORS 🛡️
+## CORS
 *(Add content here)*
 
 ---
 
-## JSON 📄
+## JSON
 *(Add content here)*
 
 ---
 
-## Package Manager 📦
+## Package Manager
 *(Add content here)*
 
 ---
 
-## MVC Architecture 🏗️
+## MVC Architecture
 *(Add content here)*
 
 ---
 
-## GraphQL 🎯
+## GraphQL
 *(Add content here)*
 
 ---
