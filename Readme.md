@@ -200,7 +200,73 @@ Before you dive into backend development, you should first consider learning or 
 ---
 
 ## CORS
-*(Add content here)*
+  ### CORS: Cross-Origin Resource Sharing
+
+  ### What is CORS?
+  - **CORS** is a browser security feature that prevents websites from making requests to a different domain than the one that served the web page.
+  - It ensures only **trusted domains** can access resources from your server.
+
+  ---
+
+  ### Why is CORS Needed?
+  - Browsers enforce the **same-origin policy**, blocking requests to different domains unless the server allows it using CORS.
+  - **Example**: If your frontend (`https://myapp.com`) tries to fetch data from a backend API (`https://api.example.com`), the browser will block the request unless the backend allows it.
+
+  ---
+
+  ### How Does CORS Work?
+   1. **Preflight Request**:
+     - For certain requests (e.g., `POST`, `PUT`), the browser sends an `OPTIONS` request to check if the server allows the actual request.
+   2. **CORS Headers**:
+     - The server responds with headers like:
+      - `Access-Control-Allow-Origin`: Specifies allowed origins (e.g., `https://myapp.com` or `*` for all).
+      - `Access-Control-Allow-Methods`: Specifies allowed HTTP methods (e.g., `GET`, `POST`).
+      - `Access-Control-Allow-Headers`: Specifies allowed headers (e.g., `Content-Type`).
+
+   ---
+
+   ### Common CORS Errors
+    1. **No `Access-Control-Allow-Origin` Header**:
+     - **Fix**: Add `Access-Control-Allow-Origin` to the server’s response.
+    2. **Preflight Request Fails**:
+     - **Fix**: Ensure the server responds correctly to `OPTIONS` requests.
+    3. **Credentials Not Allowed**:
+     - **Fix**: Set `Access-Control-Allow-Credentials: true` if the request includes credentials (e.g., cookies).
+
+---
+
+   ### Real-Life Example
+   - **Scenario**: A frontend app (`https://myapp.com`) fetches data from a backend API (`https://api.example.com`).
+   - **Problem**: The browser blocks the request because of CORS.
+   - **Solution**: The backend adds CORS headers to allow requests from `https://myapp.com`:
+  ```http
+  Access-Control-Allow-Origin: https://myapp.com
+  Access-Control-Allow-Methods: GET, POST
+
+ ### How to Enable CORS
+```javascript
+   const express = require('express');
+   const cors = require('cors');
+   const app = express();
+
+   // Enable CORS for all routes
+   app.use(cors());
+   app.listen(3000, () => console.log('Server running on port 3000'));
+
+```
+
+```python
+   from flask import Flask
+   from flask_cors import CORS
+
+   app = Flask(__name__)
+   CORS(app)  # Enable CORS for all routes
+```
+ 
+  ### Key Points
+   - CORS prevents cross-origin requests by default.
+   - Use CORS headers to allow trusted domains.
+   - Libraries like cors (Node.js) or flask-cors (Python) simplify CORS setup.
 
 ---
 
