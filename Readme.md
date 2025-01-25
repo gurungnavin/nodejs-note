@@ -42,9 +42,8 @@ Before you dive into backend development, you should first consider learning or 
 
 
 ### Examples
-Example 1: Fetching Data (HTTP GET)
-
-Scenario: Checking the weather.
+ - Example 1: Fetching Data (HTTP GET)
+   Scenario: Checking the weather.
 
    - Request:
    ```javascript
@@ -57,12 +56,93 @@ Scenario: Checking the weather.
     "temperature": "22°C"
    }
    ```
+- Example 2: Secure Login (HTTPS POST)
+  Scenario: Logging into a bank.
 
+  - Request:
+
+  ```javascript
+  POST https://www.mybank.com/login
+  Content-Type: application/json
+
+  {
+   "username": "john_doe",
+   "password": "secure123"
+  }
+  ```
+
+  - Response:
+
+  ```javascript
+  {
+  "message": "Login successful"
+  }
+  ```
+  ### Real-Life Example: Ordering Food Online
+  When you order food using an app, the app asks the server for the menu (using a GET request). After you choose your food and place an order, the app sends your order details to the server (using a POST request). The server then confirms your order. All this communication happens securely using HTTPS, so your personal and payment details stay safe.
 
 ---
 
 ## RESTful APIs
-*(Add content here)*
+ 
+ - Introduction
+   - RESTful API: Follows REST principles, uses HTTP methods (GET, POST, PUT DELETE), and is stateless (each request is independent).
+
+ - Why RESTful APIs Are Important
+ 1. Simple: Uses standard HTTP methods and URLs.
+ 2. Scalable: Stateless design handles many users efficiently.
+ 3. Flexible: Works for small to large systems.
+ 4. Widely Supported: Most languages and frameworks support it.
+
+ - Best Practices for RESTful APIs
+  - Statelessness: Each request must include all needed info.
+  - Security: Always use HTTPS.
+  - Error Handling: Use proper HTTP status codes (e.g., 200 OK, 404 Not Found).
+  - Versioning: Use versions (e.g., /v1/users) to avoid breaking changes.
+
+ ## Example
+ - Fetch All Users:
+ ```javascript
+    GET /users
+    Response: [{"id": 1, "name": "John"}, {"id": 2, "name": "Jane"}]
+ ```
+
+ - Create a User:
+ ```javascript
+    POST /users
+    Body: {"name": "Alice"}
+    Response: {"id": 3, "name": "Alice"}
+ ```
+ - Update a User
+ ```javascript
+    PUT /users/1
+    Body: {"name": "John Doe"}
+    Response: {"id": 1, "name": "John Doe"}
+ ```
+
+ - Delete a User:
+ ```javascript
+   DELETE /users/1
+   Response: 204 No Content
+ ```
+
+ ### Key Points
+   - Use HTTP methods (GET, POST, PUT, DELETE).
+   - Be stateless: Each request is independent.
+   - Use HTTPS for security.
+   - Keep URLs clear and consistent (e.g., /users, /posts).
+
+## API vs REST API: Key Differences
+
+| **Feature**   | **API**                                | **REST API**                          |
+|---------------|----------------------------------------|----------------------------------------|
+| **Definition**| General interface for communication.   | Follows REST principles.               |
+| **Protocol**  | Any protocol (HTTP, WebSockets, etc.). | Only **HTTP/HTTPS**.                   |
+| **Design**    | No specific rules.                     | Follows REST rules (stateless, etc.).  |
+| **HTTP Methods** | May not use standard methods.       | Uses `GET`, `POST`, `PUT`, `DELETE`.   |
+| **Stateless** | May rely on previous requests.         | Each request is independent.           |
+| **URLs**      | Inconsistent (e.g., `/getUsers`).      | Consistent (e.g., `/users`, `/users/1`).|
+| **Example**   | Weather API using WebSockets.          | Blog API with `GET /posts`.            |
 
 ---
 
