@@ -242,8 +242,10 @@ Before you dive into backend development, you should first consider learning or 
   ```http
   Access-Control-Allow-Origin: https://myapp.com
   Access-Control-Allow-Methods: GET, POST
+  ```
 
  ### How to Enable CORS
+  - NODE JS
 ```javascript
    const express = require('express');
    const cors = require('cors');
@@ -254,7 +256,7 @@ Before you dive into backend development, you should first consider learning or 
    app.listen(3000, () => console.log('Server running on port 3000'));
 
 ```
-
+  - PYTHON
 ```python
    from flask import Flask
    from flask_cors import CORS
