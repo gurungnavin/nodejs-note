@@ -40,6 +40,25 @@ Before you dive into backend development, you should first consider learning or 
 - With HTTPS, data is like a **sealed letter**—only the recipient can open it.
 - Always use HTTPS for sensitive data (e.g., passwords, payments).
 
+
+### Examples
+Example 1: Fetching Data (HTTP GET)
+
+Scenario: Checking the weather.
+
+   - Request:
+   ```javascript
+   GET https://api.weather.com/weather?city=NewYork
+   ```
+   - Response:
+   ```javascript 
+   {
+    "city": "New York",
+    "temperature": "22°C"
+   }
+   ```
+
+
 ---
 
 ## RESTful APIs
