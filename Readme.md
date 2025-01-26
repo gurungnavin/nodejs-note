@@ -362,32 +362,32 @@ Before you dive into backend development, you should first consider learning or 
    }
    ```
 
-   [-] JSON vs XML
+  [-] JSON vs XML
  
-    1. JSON
+  1. JSON
     - Lightweight and easy to read.
     - Uses less data (no closing tags).
     
     - Example:
-    ```json
+  ```json
       {
         "name": "John",
         "age": 30
       }
-    ```
-    2. XML
+  ```
+  2. XML
 
     - More verbose and harder to read.
     - Uses more data (requires closing tags).
 
     - Example:
 
-    ```xml
+  ```xml
       <person>
         <name>John</name>
         <age>30</age>
       </person>
-    ```
+  ```
   ## Key Points to Remember
   - JSON is a **key-value pair** format.
   - Keys and strings must be in **double quotes**.
