@@ -409,11 +409,10 @@ Before you dive into backend development, you should first consider learning or 
 ## Package Manager
 
   ## What is a Package Manager?
-    A package manager is a tool that helps you install, update, configure, and manage software packages (libraries, frameworks, tools, etc.) in your projects.
+  A package manager is a tool that helps you install, update, configure, and manage software packages (libraries, frameworks, tools, etc.) in your projects.
+  It automates the process of handling dependencies, ensuring that your project has all the necessary components to run.
 
-    It automates the process of handling dependencies, ensuring that your project has all the necessary components to run.
-
-    ---
+  ---
 
   ## Why Are Package Managers Important?
 
@@ -456,18 +455,18 @@ Before you dive into backend development, you should first consider learning or 
 
   ## How Do Package Managers Work?
 
-    ### Package Registry:
+  ### Package Registry:
     - A central repository where packages are stored (e.g., npm registry, PyPI for Python).
 
-    ### Configuration File:
+  ### Configuration File:
     - A file (e.g., `package.json`, `requirements.txt`) that lists all the dependencies for your project.
 
-    ### Commands:
+  ### Commands:
     - Commands to install, update, or remove packages (e.g., `npm install`, `pip install`).
 
-    ---
+  ---
 
-  ## Popular Package Managers
+  ### Popular Package Managers
 
     ### npm (Node.js):
     - **Configuration File:** `package.json`
@@ -492,15 +491,15 @@ Before you dive into backend development, you should first consider learning or 
       - Upgrade installed packages: `sudo apt upgrade`
       - Remove a package: `sudo apt remove <package-name>`
 
-    ---
+  ---
 
-  ## Key Points to Remember
+  ### Key Points to Remember
     - Package managers automate dependency management.
     - They use a configuration file to track dependencies.
     - Each programming language or operating system has its own package manager.
     - Popular examples include **npm**, **pip**, and **apt**.
 
-    ---
+  ---
 
   ### Real-life Example
     A package manager is like a shopping center full of pre-built features (design, logic, etc.) for software. 
