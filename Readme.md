@@ -365,8 +365,9 @@ Before you dive into backend development, you should first consider learning or 
    ### JSON vs XML
  
   ### JSON:
-    - **Lightweight and easy to read**.
-    - **Uses less data** (no closing tags).
+    - Lightweight and easy to read.
+    - Uses less data (no closing tags).
+    
     - Example:
     ```json
       {
@@ -380,7 +381,7 @@ Before you dive into backend development, you should first consider learning or 
 
     - Example:
 
-    ```bash
+    ```xml
       <person>
         <name>John</name>
         <age>30</age>
