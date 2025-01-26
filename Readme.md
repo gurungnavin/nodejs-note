@@ -456,55 +456,55 @@ Before you dive into backend development, you should first consider learning or 
   ## How Do Package Managers Work?
 
   ### Package Registry:
-    - A central repository where packages are stored (e.g., npm registry, PyPI for Python).
+  - A central repository where packages are stored (e.g., npm registry, PyPI for Python).
 
   ### Configuration File:
-    - A file (e.g., `package.json`, `requirements.txt`) that lists all the dependencies for your project.
+  - A file (e.g., `package.json`, `requirements.txt`) that lists all the dependencies for your project.
 
   ### Commands:
-    - Commands to install, update, or remove packages (e.g., `npm install`, `pip install`).
+  - Commands to install, update, or remove packages (e.g., `npm install`, `pip install`).
 
   ---
 
-  ### Popular Package Managers
+  ## Popular Package Managers
 
-    ### npm (Node.js):
-    - **Configuration File:** `package.json`
-    - **Commands:**
-      - Install a package: `npm install <package-name>`
-      - Install all dependencies: `npm install`
-      - Update a package: `npm update <package-name>`
-      - Remove a package: `npm uninstall <package-name>`
+  ### npm (Node.js):
+  - **Configuration File:** `package.json`
+  - **Commands:**
+    - Install a package: `npm install <package-name>`
+    - Install all dependencies: `npm install`
+    - Update a package: `npm update <package-name>`
+    - Remove a package: `npm uninstall <package-name>`
 
-    ### pip (Python):
-    - **Configuration File:** `requirements.txt`
-    - **Commands:**
-      - Install a package: `pip install <package-name>`
-      - Install all dependencies: `pip install -r requirements.txt`
-      - Update a package: `pip install --upgrade <package-name>`
-      - Remove a package: `pip uninstall <package-name>`
+  ### pip (Python):
+  - **Configuration File:** `requirements.txt`
+  - **Commands:**
+    - Install a package: `pip install <package-name>`
+    - Install all dependencies: `pip install -r requirements.txt`
+    - Update a package: `pip install --upgrade <package-name>`
+    - Remove a package: `pip uninstall <package-name>`
 
-    ### apt (Ubuntu/Debian):
-    - **Commands:**
-      - Install a package: `sudo apt install <package-name>`
-      - Update package list: `sudo apt update`
-      - Upgrade installed packages: `sudo apt upgrade`
-      - Remove a package: `sudo apt remove <package-name>`
+  ### apt (Ubuntu/Debian):
+  - **Commands:**
+    - Install a package: `sudo apt install <package-name>`
+    - Update package list: `sudo apt update`
+    - Upgrade installed packages: `sudo apt upgrade`
+    - Remove a package: `sudo apt remove <package-name>`
 
   ---
 
   ### Key Points to Remember
-    - Package managers automate dependency management.
-    - They use a configuration file to track dependencies.
-    - Each programming language or operating system has its own package manager.
-    - Popular examples include **npm**, **pip**, and **apt**.
+  - Package managers automate dependency management.
+  - They use a configuration file to track dependencies.
+  - Each programming language or operating system has its own package manager.
+  - Popular examples include **npm**, **pip**, and **apt**.
 
   ---
 
   ### Real-life Example
-    A package manager is like a shopping center full of pre-built features (design, logic, etc.) for software. 
-    If you need something, you just grab the right package instead of building it from scratch. It saves time 
-    and lets you customize by yourself and add to your project easily.
+  A package manager is like a shopping center full of pre-built features (design, logic, etc.) for software. 
+  If you need something, you just grab the right package instead of building it from scratch. It saves time 
+  and lets you customize by yourself and add to your project easily.
 
 
 ---
