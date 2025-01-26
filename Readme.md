@@ -362,9 +362,9 @@ Before you dive into backend development, you should first consider learning or 
    }
    ```
 
-   ### JSON vs XML
+   [-] JSON vs XML
  
-   ### JSON
+    1. JSON
     - Lightweight and easy to read.
     - Uses less data (no closing tags).
     
@@ -375,8 +375,8 @@ Before you dive into backend development, you should first consider learning or 
         "age": 30
       }
     ```
-   ### XML
-   
+    2. XML
+
     - More verbose and harder to read.
     - Uses more data (requires closing tags).
 
