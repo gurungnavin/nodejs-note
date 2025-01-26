@@ -581,7 +581,8 @@ In the MERN stack, the **MVC Architecture** is used to organize the application 
 7. **View updates the UI**:
    - The **View** displays the new task in the list.
 
-![alt text](https://file%2B.vscode-resource.vscode-cdn.net/Users/navingurung/Downloads/MVC-Architecture.png?version%3D1737870209694)
+
+![MVC-Architecture](https://github.com/user-attachments/assets/46ac277a-b7d8-4044-8b34-59859bb6491a)
 
 ---
 
