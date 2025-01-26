@@ -582,6 +582,7 @@ In the MERN stack, the **MVC Architecture** is used to organize the application 
    - The **View** displays the new task in the list.
 
 
+![MVC-Architecture](https://github.com/user-attachments/assets/46ac277a-b7d8-4044-8b34-59859bb6491a)
 
 ---
 
