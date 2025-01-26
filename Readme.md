@@ -380,7 +380,7 @@ Before you dive into backend development, you should first consider learning or 
 
     - Example:
 
-    ```xml
+    ```bash
       <person>
         <name>John</name>
         <age>30</age>
@@ -396,6 +396,7 @@ Before you dive into backend development, you should first consider learning or 
     - **Arrays** (e.g., `"hobbies": ["reading", "coding"]`)
     - **Objects** (e.g., `"address": {"city": "New York"}`)
     - **`null`** (e.g., `"middleName": null`)
+
   - JSON is **language-independent** and widely used in:
     - **APIs**
     - **Configuration files**
