@@ -364,42 +364,42 @@ Before you dive into backend development, you should first consider learning or 
 
    ### JSON vs XML
  
-    ### JSON:
-     - **Lightweight and easy to read**.
-     - **Uses less data** (no closing tags).
-     - Example:
-       ```json
-        {
-          "name": "John",
-          "age": 30
-        }
-       ```
-    ### XML:
-      - More verbose and harder to read.
-      - Uses more data (requires closing tags).
+  ### JSON:
+    - **Lightweight and easy to read**.
+    - **Uses less data** (no closing tags).
+    - Example:
+    ```json
+      {
+        "name": "John",
+        "age": 30
+      }
+    ```
+  ### XML:
+    - More verbose and harder to read.
+    - Uses more data (requires closing tags).
 
-      - Example:
-    
-        ```xml
-        <person>
-          <name>John</name>
-          <age>30</age>
-        </person>
-        ```
-        ## Key Points to Remember
-    - JSON is a **key-value pair** format.
-    - Keys and strings must be in **double quotes**.
-    - Values can be:
-      - **Strings** (e.g., `"name": "John"`)
-      - **Numbers** (e.g., `"age": 30`)
-      - **Booleans** (e.g., `"isStudent": true`)
-      - **Arrays** (e.g., `"hobbies": ["reading", "coding"]`)
-      - **Objects** (e.g., `"address": {"city": "New York"}`)
-      - **`null`** (e.g., `"middleName": null`)
-    - JSON is **language-independent** and widely used in:
-      - **APIs**
-      - **Configuration files**
-      - **Data storage** (e.g., NoSQL databases like MongoDB)    
+    - Example:
+
+    ```xml
+      <person>
+        <name>John</name>
+        <age>30</age>
+      </person>
+    ```
+  ## Key Points to Remember
+  - JSON is a **key-value pair** format.
+  - Keys and strings must be in **double quotes**.
+  - Values can be:
+    - **Strings** (e.g., `"name": "John"`)
+    - **Numbers** (e.g., `"age": 30`)
+    - **Booleans** (e.g., `"isStudent": true`)
+    - **Arrays** (e.g., `"hobbies": ["reading", "coding"]`)
+    - **Objects** (e.g., `"address": {"city": "New York"}`)
+    - **`null`** (e.g., `"middleName": null`)
+  - JSON is **language-independent** and widely used in:
+    - **APIs**
+    - **Configuration files**
+    - **Data storage** (e.g., NoSQL databases like MongoDB)    
 
 ---
 
