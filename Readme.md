@@ -365,10 +365,10 @@ Before you dive into backend development, you should first consider learning or 
   [-] JSON vs XML
  
   1. JSON
-    - Lightweight and easy to read.
-    - Uses less data (no closing tags).
+  - Lightweight and easy to read.
+  - Uses less data (no closing tags).
     
-    - Example:
+  - Example:
   ```json
       {
         "name": "John",
@@ -377,10 +377,10 @@ Before you dive into backend development, you should first consider learning or 
   ```
   2. XML
 
-    - More verbose and harder to read.
-    - Uses more data (requires closing tags).
+  - More verbose and harder to read.
+  - Uses more data (requires closing tags).
 
-    - Example:
+  - Example:
 
   ```xml
       <person>
