@@ -647,4 +647,40 @@ GraphQL is a query language for APIs and a runtime for executing those queries b
 
 ![スクリーンショット 2025-01-27 150515](https://github.com/user-attachments/assets/92dbf4d5-df29-4b42-a9ab-09ad226bcc16)
 
+
+### When to Use GraphQL?
+- Complex Data Requirements: When clients need to fetch nested or related data in a single request.
+- Evolving APIs: When the API schema is expected to change frequently.
+- Real-time Updates: When real-time data (e.g., notifications, live feeds) is required.
+- Mobile Applications: Where bandwidth efficiency is critical.
+
+### When to Use REST?
+- Simple Data Requirements: When the data structure is straightforward and doesn’t require nested queries.
+- Caching Needs: When HTTP caching is essential for performance.
+- Legacy Systems: When integrating with existing systems that already use REST.
+- Ease of Use: When developers prefer a simpler, more familiar approach.
+
+### Real-Life Example
+### (GraphQL:)
+Imagine you’re building a social media app. You need to fetch a user’s profile, their posts, and the comments on those posts. With GraphQL, you can request all this data in a single query:
+
+
+```graphql
+{
+  user(id: 1) {
+    name
+    posts {
+      title
+      comments {
+        text
+        author
+      }
+    }
+  }
+}
+```
+
+## Conclusion
+- GraphQL -> is ideal for modern applications with complex data requirements and a need for flexibility.
+- REST -> is a simpler, more traditional approach that works well for straightforward use cases and legacy systems.
 ---
