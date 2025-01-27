@@ -606,6 +606,27 @@ Each part has a specific role, and they work together to deliver a seamless expe
 ---
 
 ## GraphQL
-*(Add content here)*
 
+### What is GraphQL?
+GraphQL is a query language for APIs and a runtime for executing those queries by using a type system you define for your data. It was developed by Facebook in 2012 and open-sourced in 2015. GraphQL allows clients to request exactly the data they need, making it more efficient and flexible compared to traditional REST APIs.
+
+### Key Features of GraphQL:
+- **Single Endpoint**: Unlike REST, which uses multiple endpoints for different resources, GraphQL typically uses a single endpoint for all queries and mutations.
+- **Declarative Data Fetching**: Clients specify exactly what data they need, and the server responds with only that data.
+- **Strongly Typed Schema**: GraphQL APIs are defined by a schema that specifies the types of data available and the relationships between them.
+- **Real-time Data with Subscriptions**: GraphQL supports real-time updates through subscriptions, allowing clients to receive updates when data changes.
+
+### Example Query:
+```graphql
+{
+  user(id: 1) {
+    name
+    email
+    posts {
+      title
+      content
+    }
+  }
+}
+```
 ---
