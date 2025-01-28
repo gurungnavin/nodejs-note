@@ -9,7 +9,7 @@ npm or yarn](#2installing-npm-packages-through-npm-or-yarn)
 3. [Understanding the package.json file](#3-understanding-the-packagejson-file)
 4. [Create a basic http server in Node.js](#4-create-a-basic-http-server-in-nodejs)
 5. [Importing and exports modules](#5-importing-and-exports-modules)
-6. [Package Manager](#package-manager)
+6. [Working with FileSystem in Node.js](#6-working-with-fileSystem-in-node.js)
 7. [MVC Architecture](#mvc-architecture)
 8. [GraphQL](#graphql)
 
@@ -243,7 +243,9 @@ node index.js
   1.  CommonJS (Default in Node.js):
    - ```module.exports``` for single or multiple exports.
    - ```require()``` to import.
+
    - Example:
+
    ```javascript
       // Export
     // math.js
@@ -258,7 +260,9 @@ node index.js
   2. ES Modules (Modern):
    - ```export``` for single or multiple exports
    - ```import``` to import
+
    - Example:
+
    ```javascript
   // Export
     export { add, subtract };
@@ -298,3 +302,115 @@ node index.js
   - Use ES Modules (import/export) for modern JavaScript.
   - ES Modules require .mjs extension or "type": "module" in package.json.
   - Modules are cached after the first import. 
+
+
+## 6. Working with FileSystem in Node.js
+
+### i. Introduction
+  - The fs module in Node.js allows you to interact with the file system.
+  - It provides methods for reading, writing, updating, and deleting files and directories.
+  - Supports both synchronous (blocking) and asynchronous (non-blocking) operations.
+
+### ii. Usage
+  - File Operations: Read, write, append, delete files.
+
+  - Directory Operations: Create, read, delete directories.
+
+  - File Metadata: Get information about files (e.g., size, permissions).  
+
+### iii. Key Methods
+  1. Asynchronous Methods(Non-blocking):
+
+   - ```fs.readFile()```: Read a file.
+   - ```fs.writeFile()```: Write to a file (overwrites existing content).
+   - ```fs.appendFile()```: Append to a file.
+   - ```fs.unlink()```: Delete a file.
+   - ```fs.mkdir()```: Create a directory.
+   - ```fs.rmdir()```: Remove a directory.
+
+  2. Synchronous Methods (Blocking) 
+
+   -  ```fs.readFileSync()```: Synchronously read a file.
+   -  ```fs.writeFileSync()```: Synchronously write to a file.
+   -  ```fs.appendFileSync()```: Synchronously append to a file.
+   -  ```fs.unlinkSync()```: Synchronously delete a file.
+   -  ```fs.mkdirSync()```: Synchronously create a directory.
+   -  ```fs.rmdirSync()```: Synchronously remove a directory.
+
+  3. File Metadata: 
+   - ```fs.stat()```: Get file/directory stats (e.g., size, permissions).
+
+### iv. Examples   
+  1. Reading a File
+
+  ```javascript
+    const fs = require('fs');
+
+    // Asynchronous
+    fs.readFile('file.txt', 'utf8', (err, data) => {
+      if (err) throw err;
+      console.log(data);
+    });
+
+    // Synchronous
+    const data = fs.readFileSync('file.txt', 'utf8');
+    console.log(data);
+  ``` 
+  2. Writing to a File: 
+
+  ```javascript
+    // Asynchronous
+    fs.writeFile('file.txt', 'Hello, World!', (err) => {
+      if (err) throw err;
+      console.log('File written successfully.');
+    });
+
+    // Synchronous
+    fs.writeFileSync('file.txt', 'Hello, World!');
+  ```
+
+  3. Appending to a File:
+
+  ```javascript
+    // Asynchronous
+    fs.appendFile('file.txt', '\nNew content', (err) => {
+      if (err) throw err;
+      console.log('Content appended.');
+    });
+
+    // Synchronous
+    fs.appendFileSync('file.txt', '\nNew content');
+  ```
+
+  4. Deleting a File
+  ```javascript
+    // Create a directory
+    fs.mkdir('newDir', (err) => {
+      if (err) throw err;
+      console.log('Directory created.');
+    });
+
+    // Remove a directory
+    fs.rmdir('newDir', (err) => {
+      if (err) throw err;
+      console.log('Directory removed.');
+    });
+  ```
+
+  5. File Metadata:
+
+  ```javascript
+    fs.stat('file.txt', (err, stats) => {
+      if (err) throw err;
+      console.log(stats.isFile()); // true
+      console.log(stats.size); // File size in bytes
+    });
+
+  ``` 
+
+### v. Key Points  
+
+- Use asynchronous methods for non-blocking operations.
+- Use synchronous methods for simplicity (but avoid in production for heavy tasks).
+- Always handle errors in asynchronous operations.
+- Use fs.stat() to get file/directory metadata.
