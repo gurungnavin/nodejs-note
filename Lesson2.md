@@ -4,7 +4,7 @@
 
 ## Table of Contents
 1. [Initializing an npm Package](#1-initializing-an-npm-package)
-2. Installing npm packages through
+2. [Installing npm packages through
 npm or yarn](#2)
 3. [CRUD](#crud)
 4. [CORS](#cors)
@@ -28,18 +28,18 @@ npm or yarn](#2)
 - Answer prompts to create ```package.json```.
 
 3. For default setup, use:
-```bash
-npm init -y
-```
+  ```bash
+  npm init -y
+  ```
 ### Uninstalling an npm Package
 1. Run on terminal
-```bash 
+  ```bash 
    npm uninstall <package-name>
-```
+  ```
 2. OR Uninstall a Dev Dependency
-```bash
+  ```bash
   npm uninstall <package-name> --save-dev
-```
+  ```
 
 ### What is package.json?
 - Configuration file for your project.
@@ -48,3 +48,14 @@ npm init -y
 ## That’s it! Now you know how to initialize and uninstall npm packages like a pro! 🚀
 
 --- 
+
+## 2.Installing npm packages through ```npm or yarn```
+
+| Feature                  | npm                          | Yarn                        |
+|--------------------------|------------------------------|-----------------------------|
+| **Install Command**       | `npm install`                | `yarn add`                  |
+| **Dev Dependency Flag**   | `--save-dev`                 | `--dev`                     |
+| **Global Install**        | `npm install -g`             | `yarn global add`           |
+| **Lock File**             | `package-lock.json`          | `yarn.lock`                 |
+| **Speed**                 | Slower (older versions)      | Faster (parallel downloads) |
+| **Offline Mode**          | Limited support              | Full offline support        |
