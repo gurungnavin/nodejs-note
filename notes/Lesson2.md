@@ -10,7 +10,7 @@ npm or yarn](#2installing-npm-packages-through-npm-or-yarn)
 4. [Create a basic http server in Node.js](#4-create-a-basic-http-server-in-nodejs)
 5. [Importing and exports modules](#5-importing-and-exports-modules)
 6. [Working with FileSystem in Node.js](#6-working-with-filesystem-in-nodejs)
-7. [MVC Architecture](#mvc-architecture)
+7. [HTTP Protocols](#7-http-protocols)
 8. [GraphQL](#graphql)
 
 ## 1. Initializing an npm Package
@@ -419,3 +419,57 @@ node index.js
 - Use synchronous methods for simplicity (but avoid in production for heavy tasks).
 - Always handle errors in asynchronous operations.
 - Use fs.stat() to get file/directory metadata.
+
+
+---
+
+## 7. HTTP Protocols
+
+  ### a. Introduction
+
+  HTTP (Hypertext Transfer Protocol) is a set of rules for communication 
+  between clients (e.g., browsers, apps) and servers. It defines how requests
+  and responses are structured, enabling data exchange over the web.
+
+  ### b. Role of HTTP Protocols
+
+   - Sets Rules: Defines how clients and servers interact (e.g., GET, POST, status codes).
+   - Enables Communication: Allows APIs to fetch, send, update, or delete data.
+   - Standardizes Interaction: Ensures consistency in how data is requested and delivered. 
+
+  ### c. Example 
+
+  ```javascript
+    const http = require('http');
+
+    // Create an HTTP server
+    const server = http.createServer((req, res) => {
+      if (req.method === 'GET') {
+        res.writeHead(200, { 'Content-Type': 'text/plain' });
+        res.end('Hello, World!');
+      }
+    });
+
+      server.listen(3000, () => {
+      console.log('Server running on http://localhost:3000');
+    });
+
+  ```
+
+  ### d. Real-Life Example: Restaurant
+  - HTTP Protocol: The boss who sets rules for communication.
+  - API: The waiter who takes orders (requests) and delivers food (responses).
+  - Server: The kitchen that prepares the food (processes requests).
+  - Client: The customer who orders food (makes requests).
+
+  ### e. Scenario:
+  - Customer (Client): Asks for a menu (GET request).
+  - Waiter (API): Follows HTTP rules to fetch the menu from the kitchen (server).
+  - Kitchen (Server): Sends the menu (response) back to the customer
+
+  ### f. Summary
+
+  - HTTP Protocols are the rules for web communication.
+  - APIs use these rules to interact with data, like a waiter following the boss’s rules in a restaurant.
+
+  
