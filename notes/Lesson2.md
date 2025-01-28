@@ -7,7 +7,7 @@
 2. [Installing npm packages through
 npm or yarn](#2installing-npm-packages-through-npm-or-yarn)
 3. [Understanding the package.json file](#3-understanding-the-packagejson-file)
-4. [CORS](#cors)
+4. [Create a basic http server in Node.js](#4-create-a-basic-http-server-in-nodejs)
 5. [JSON](#json)
 6. [Package Manager](#package-manager)
 7. [MVC Architecture](#mvc-architecture)
