@@ -139,7 +139,7 @@ npm or yarn](#2installing-npm-packages-through-npm-or-yarn)
 ## 4. Create a basic http server in Node.js
 
 ### a. Install Node.js
-- Download and install Node.js from [nodejs.org]https://nodejs.org).
+- Download and install Node.js from [nodejs.org](https://nodejs.org).
 - verify installation by running in terminal with: 
  
 ```bash
