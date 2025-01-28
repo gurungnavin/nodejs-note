@@ -225,7 +225,7 @@ Before you dive into backend development, you should first consider learning or 
 
    ---
 
-   ### Common CORS Errors
+  ### Common CORS Errors
     1. **No** `Access-Control-Allow-Origin` **Header** :
      - **Fix** : Add `Access-Control-Allow-Origin` to the server’s response.
     2. **Preflight Request Fails** :
