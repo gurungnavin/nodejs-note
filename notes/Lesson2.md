@@ -8,7 +8,7 @@
 npm or yarn](#2installing-npm-packages-through-npm-or-yarn)
 3. [Understanding the package.json file](#3-understanding-the-packagejson-file)
 4. [Create a basic http server in Node.js](#4-create-a-basic-http-server-in-nodejs)
-5. [Importing and exports modules](#json)
+5. [Importing and exports modules](#5-importing-and-exports-modules)
 6. [Package Manager](#package-manager)
 7. [MVC Architecture](#mvc-architecture)
 8. [GraphQL](#graphql)
