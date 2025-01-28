@@ -9,7 +9,7 @@ npm or yarn](#2installing-npm-packages-through-npm-or-yarn)
 3. [Understanding the package.json file](#3-understanding-the-packagejson-file)
 4. [Create a basic http server in Node.js](#4-create-a-basic-http-server-in-nodejs)
 5. [Importing and exports modules](#5-importing-and-exports-modules)
-6. [Working with FileSystem in Node.js](#6-working-with-fileSystem-in-node.js)
+6. [Working with FileSystem in Node.js](#6-working-with-filesystem-in-nodejs)
 7. [MVC Architecture](#mvc-architecture)
 8. [GraphQL](#graphql)
 
@@ -134,7 +134,8 @@ npm or yarn](#2installing-npm-packages-through-npm-or-yarn)
   ```
   ### In short, package.json is the heart of your Node.js project! It keeps everything organized and makes your project easy to share and run. 🚀
 
-  ---
+---
+
 
 ## 4. Create a basic http server in Node.js
 
@@ -228,6 +229,8 @@ node index.js
   ```
 
 
+---
+
 ## 5. Importing and exports modules
 
 ### a. Introduction
@@ -271,7 +274,7 @@ node index.js
     import { add, subtract } from './math.mjs';
    ```  
 
-  ### d. Exapmles
+  ### d. Examples
 
   ```javascript
 
@@ -302,6 +305,8 @@ node index.js
   - Use ES Modules (import/export) for modern JavaScript.
   - ES Modules require .mjs extension or "type": "module" in package.json.
   - Modules are cached after the first import. 
+
+---
 
 
 ## 6. Working with FileSystem in Node.js
