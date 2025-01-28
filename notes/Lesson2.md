@@ -139,7 +139,7 @@ npm or yarn](#2installing-npm-packages-through-npm-or-yarn)
 ## 4. Create a basic http server in Node.js
 
 ### a. Install Node.js
-- Download and install Node.js from nodejs.org.
+- Download and install Node.js from [nodejs.org]https://nodejs.org).
 - verify installation by running in terminal with: 
  
 ```bash
@@ -151,13 +151,13 @@ OR
 node -v
 ```
 ### b. Initialize npm (Node Package Manager)
-Create a Folder and open in VSCODE & Open terminal, Run the following command to create a package.json file (the -y flag skips prompts):
+Create a Folder and open in VSCODE & Open terminal, Run the following command to create a ```package.json``` file (the -y flag skips prompts):
 
  ```bash
  npm init -y
  ```
 
- ### OUTPUT
+ ### OUTPUT as ```package.json```
  ```json
   {
     "name": "lesson2",
