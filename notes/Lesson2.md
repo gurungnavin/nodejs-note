@@ -132,6 +132,100 @@ npm or yarn](#2installing-npm-packages-through-npm-or-yarn)
     }
   }
   ```
-  ## In short, package.json is the heart of your Node.js project! It keeps everything organized and makes your project easy to share and run. 🚀
-  
+  ### In short, package.json is the heart of your Node.js project! It keeps everything organized and makes your project easy to share and run. 🚀
+
   ---
+
+## 4. Create a basic http server in Node.js
+
+### a. Install Node.js
+- Download and install Node.js from nodejs.org.
+- verify installation by running in terminal with: 
+ 
+```bash
+node --version
+npm --version
+```  
+OR
+```bash
+node -v
+```
+### b. Initialize npm (Node Package Manager)
+Create a Folder and open in VSCODE & Open terminal, Run the following command to create a package.json file (the -y flag skips prompts):
+
+ ```bash
+ npm init -y
+ ```
+
+ ### OUTPUT
+ ```json
+  {
+    "name": "lesson2",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": ""
+  }
+
+ ```
+### c. Add a Start Script to package.json
+
+- Open the ```package.json``` file and add a start script under the ```"scripts"``` section:
+
+    ```json
+      "scripts": {
+        "start": "node index.js"
+     }
+    ```
+   ※ overwrite on ```"test": "echo \"Error: no test specified\" && exit 1"```
+- This lets you run the server with npm start instead of typing ```node index.js``` every time.
+
+### d.  Create index.js File
+- Create a file named ```index.js``` in your project folder. We can create not only index.js but any(server.js, main.js).
+
+
+### e. Write the Server Logic inside ```index.js```
+
+  ```javascript
+  const http = require('http');
+
+  const port = 4000
+
+  // Create the server
+  const server = http.createServer((req, res) => {
+    // Handle all requests (no routing here)
+    res.end('Hello I am from Node.js');
+  });
+
+  // Start the server on port 3000
+  server.listen(port, () => {
+    console.log('Server running at http://localhost:3000');
+  });
+
+  ```
+
+
+### f. Run the server
+- in the terminal, execute
+```bash
+npm start
+```
+or
+```bash
+node index.js
+```
+### Final Folder Structure
+  ```bash
+  your-project/
+  ├── index.js
+  ├── package.json
+  └── package-lock.json (optional, if you ever install dependencies)
+  ```
+
+
+
