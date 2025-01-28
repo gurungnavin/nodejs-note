@@ -3,8 +3,8 @@
 # NODE JS
 
 ## Table of Contents
-1. [Initializing an npm Package](#Initializing an npm Package)
-2. [RESTful APIs](#1-initializing-an-npm-package)
+1. [Initializing an npm Package](#1-initializing-an-npm-package)
+2. [RESTful APIs](#2)
 3. [CRUD](#crud)
 4. [CORS](#cors)
 5. [JSON](#json)
