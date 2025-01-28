@@ -1,6 +1,6 @@
 
 // after install dotenv, write the below config.
-require('dotenv').config()
+require('dotenv/lib/main').config()
 const http = require('http');
 
 // import PORT from .env and for git .gitignore

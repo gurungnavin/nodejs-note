@@ -8,7 +8,7 @@
 npm or yarn](#2installing-npm-packages-through-npm-or-yarn)
 3. [Understanding the package.json file](#3-understanding-the-packagejson-file)
 4. [Create a basic http server in Node.js](#4-create-a-basic-http-server-in-nodejs)
-5. [JSON](#json)
+5. [Importing and exports modules](#json)
 6. [Package Manager](#package-manager)
 7. [MVC Architecture](#mvc-architecture)
 8. [GraphQL](#graphql)
@@ -228,4 +228,73 @@ node index.js
   ```
 
 
+## 5. Importing and exports modules
 
+### a. Introduction
+- Modules are reusable pieces of code in Node.js.
+- They help in organizing, sharing, and encapsulating code.
+
+### b. Usage
+- Code Organization: Break large codebases into smaller files.
+- Reusability: Share code across files or projects.
+- Encapsulation: Keep variables/functions private unless exported.
+
+### c. Types of Exports
+  1.  CommonJS (Default in Node.js):
+   - ```module.exports``` for single or multiple exports.
+   - ```require()``` to import.
+   - Example:
+   ```javascript
+      // Export
+    // math.js
+    const add = (a, b) => a + b;
+    module.exports = add;
+
+    // app.js
+    const add = require('./math');
+    console.log(add(2, 3)); // 5
+
+   ``` 
+  2. ES Modules (Modern):
+   - ```export``` for single or multiple exports
+   - ```import``` to import
+   - Example:
+   ```javascript
+  // Export
+    export { add, subtract };
+
+    // Import
+    import { add, subtract } from './math.mjs';
+   ```  
+
+  ### d. Exapmles
+
+  ```javascript
+
+    // CommonJS
+    // math.js
+    const add = (a, b) => a + b;
+    const subtract = (a, b) => a - b;
+    module.exports = { add, subtract };
+
+    // app.js
+    const { add, subtract } = require('./math');
+    console.log(add(2, 3)); // 5
+
+    // ES Modules
+    // math.mjs
+    export const add = (a, b) => a + b;
+    export const subtract = (a, b) => a - b;
+
+    // app.mjs
+    import { add, subtract } from './math.mjs';
+    console.log(subtract(5, 2)); // 3
+
+  ```
+
+
+  ### e. Key Points 
+  - Use CommonJS (require/module.exports) for Node.js default.
+  - Use ES Modules (import/export) for modern JavaScript.
+  - ES Modules require .mjs extension or "type": "module" in package.json.
+  - Modules are cached after the first import. 
