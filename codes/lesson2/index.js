@@ -1,6 +1,6 @@
 
 // after install dotenv, write the below config.
-require('dotenv/lib/main').config()
+require('dotenv').config();
 const http = require('http');
 
 // import PORT from .env and for git .gitignore
@@ -14,5 +14,5 @@ const server = http.createServer((req, res) => {
 
 // Start the server on port 3000
 server.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
+  console.log(`サーバを実行中 url: http://localhost:${port}`);
 });
