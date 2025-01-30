@@ -565,3 +565,108 @@ node index.js
   ### What is the Global Object?
   - In Node.js, the global object is like a "container" that holds variables, functions, and modules that are available everywhere in your code (no need to import them!).
   - It’s similar to the window object in browsers but for Node.js.
+
+  ### Common Global Properties/Methods
+  Here are key things available on the global object (you can use them directly!):
+
+  1. **__dirname
+  - Returns the absolute path of the folder where your current file is located.
+  - Example:
+
+  ```javascript
+    console.log(__dirname); // Output: /Users/yourname/projects/myapp
+  ```
+
+  2. __filename
+
+  - Returns the absolute path of the current file.
+  - Example:
+
+  ```javascript
+    console.log(__filename); // Output: /Users/yourname/projects/myapp/index.js
+  ```
+
+  3. require()
+  - Used to import modules/files in Node.js
+  - Example:
+
+  ```javascript
+    const fs = require('fs'); // Import the 'fs' module
+  ```
+
+  4. ```module``` , ```exports```
+  - Used to export code from a file (to make it usable in other files).
+  - Example:
+  ```javascript
+    // In math.js
+    exports.add = (a, b) => a + b;
+
+    // In app.js
+    const math = require('./math.js');
+    math.add(2, 3); // 5
+  ```
+
+  5. ```process```
+  - Gives info about the current Node.js process (like environment variables, command-line arguments, etc.).
+  - Example:
+  ```javascript
+    console.log(process.env.PORT); // Access environment variable
+    console.log(process.argv); // Command-line arguments
+  ```
+
+  6. ```console```
+  - Used for printing messages to the terminal (like console.log, console.error).
+
+  ### Important Notes
+
+  ### ➤ Global Variables
+  - If you declare a variable without ```let```, ```const```, or ```var```, it becomes a global variable (attached to the ```global``` object).
+
+  ```javascript
+      myVar = 10; // Bad practice! Now global.myVar = 10
+  ```
+  ※ Avoid this—it can cause bugs!
+
+  ### ➤ Not Everything is Global
+  - Some modules (like ```fs```, http) need to be imported with ```require()``` first. They’re not global by default.
+
+  ### ➤ ES Modules (Modern Node.js)
+  - If you’re using ```import/export``` syntax (ES modules), some globals like ```require```, ```module```, and ```__dirname``` won’t work directly. You’ll need alternatives like ```import.meta.url```.
+
+  ### How to Access the Global Object
+  - we can directly use its properties (like console.log).
+  - To see all properties:
+  ```javascript
+      console.log(global); // Lists everything on the global object
+  ```
+
+  ### When to Use the Global Object?
+  - Rarely! Overusing globals can lead to messy code. Instead:
+    - Use modules (```require/exports```) to share code.
+    - Use environment variables (via ```process.env```) for configuration.
+
+  
+  ### Example: Adding Something to Global
+  ```javascript
+    // Add a function to the global object
+    global.sayHello = () => {
+      console.log("Hello World!");
+    };
+
+    // Now use it anywhere in your app
+    sayHello(); // Output: "Hello World!"
+  ```
+
+  ### Quick Summary Table
+
+    | Method                       | What It Does                                    | Example                                    |
+    |------------------------------|-------------------------------------------------|--------------------------------------------|
+    | `.on(event, callback)`        | Listens for an event forever                    | `myEmitter.on('open', openFile)`           |
+    | `.once(event, callback)`      | Listens for an event once                       | `myEmitter.once('firstClick', handleClick)`|
+    | `.emit(event)`                | Triggers an event                               | `myEmitter.emit('error')`                  |
+    | `.removeListener(event, callback)` | Stops listening to an event               | `myEmitter.removeListener('open', openFile)`|
+
+    ### Final Tip
+
+    Avoid adding too many things to the ```global``` object. Stick to modules and proper scoping (```let```, ```const```, ```var```) for clean code! 😊
+___    
