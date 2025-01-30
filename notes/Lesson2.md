@@ -659,12 +659,13 @@ node index.js
 
   ### Quick Summary Table
 
-    | Method                       | What It Does                                    | Example                                    |
-    |------------------------------|-------------------------------------------------|--------------------------------------------|
-    | `.on(event, callback)`        | Listens for an event forever                    | `myEmitter.on('open', openFile)`           |
-    | `.once(event, callback)`      | Listens for an event once                       | `myEmitter.once('firstClick', handleClick)`|
-    | `.emit(event)`                | Triggers an event                               | `myEmitter.emit('error')`                  |
-    | `.removeListener(event, callback)` | Stops listening to an event               | `myEmitter.removeListener('open', openFile)`|
+  | Method                       | What It Does                                    | Example                                    |
+|------------------------------|-------------------------------------------------|--------------------------------------------|
+| `.on(event, callback)`        | Listens for an event forever                    | `myEmitter.on('open', openFile)`           |
+| `.once(event, callback)`      | Listens for an event once                       | `myEmitter.once('firstClick', handleClick)`|
+| `.emit(event)`                | Triggers an event                               | `myEmitter.emit('error')`                  |
+| `.removeListener(event, callback)` | Stops listening to an event               | `myEmitter.removeListener('open', openFile)`|
+
 
     ### Final Tip
 
