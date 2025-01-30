@@ -569,7 +569,7 @@ node index.js
   ### Common Global Properties/Methods
   Here are key things available on the global object (you can use them directly!):
 
-  1. **__dirname
+  1. `__dirname`
   - Returns the absolute path of the folder where your current file is located.
   - Example:
 
@@ -577,7 +577,7 @@ node index.js
     console.log(__dirname); // Output: /Users/yourname/projects/myapp
   ```
 
-  2. __filename
+  2. `__filename`
 
   - Returns the absolute path of the current file.
   - Example:
@@ -586,7 +586,7 @@ node index.js
     console.log(__filename); // Output: /Users/yourname/projects/myapp/index.js
   ```
 
-  3. require()
+  3. `require()`
   - Used to import modules/files in Node.js
   - Example:
 
