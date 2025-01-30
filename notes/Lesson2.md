@@ -12,7 +12,7 @@ npm or yarn](#2installing-npm-packages-through-npm-or-yarn)
 6. [Working with FileSystem in Node.js](#6-working-with-filesystem-in-nodejs)
 7. [HTTP Protocols](#7-http-protocols)
 8. [Events & Event Emitters](#8-events--event-emitters)
-9. []()
+9. [Global object](#9-global-object)
 
 ## 1. Initializing an npm Package
 
@@ -558,4 +558,10 @@ node index.js
     - Flexible: You can create custom events for anything!
     - Scalable: Perfect for apps with lots of users or tasks (e.g., chat apps, games).
 
----    
+---
+
+## 9. Global object
+
+  ### What is the Global Object?
+  - In Node.js, the global object is like a "container" that holds variables, functions, and modules that are available everywhere in your code (no need to import them!).
+  - It’s similar to the window object in browsers but for Node.js.
