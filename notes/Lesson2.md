@@ -669,7 +669,7 @@ node index.js
 | `console`         | Prints messages to the terminal     |
 
 
-    ### Final Tip
+  ### Final Tip
 
-    Avoid adding too many things to the ```global``` object. Stick to modules and proper scoping (```let```, ```const```, ```var```) for clean code! 😊
+  Avoid adding too many things to the ```global``` object. Stick to modules and proper scoping (```let```, ```const```, ```var```) for clean code! 😊
 ___    
