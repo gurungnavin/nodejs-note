@@ -11,7 +11,7 @@ npm or yarn](#2installing-npm-packages-through-npm-or-yarn)
 5. [Importing and exports modules](#5-importing-and-exports-modules)
 6. [Working with FileSystem in Node.js](#6-working-with-filesystem-in-nodejs)
 7. [HTTP Protocols](#7-http-protocols)
-8. [GraphQL](#graphql)
+8. [Events & Event Emitters](#graphql)
 
 ## 1. Initializing an npm Package
 
@@ -472,4 +472,65 @@ node index.js
   - HTTP Protocols are the rules for web communication.
   - APIs use these rules to interact with data, like a waiter following the boss’s rules in a restaurant.
 
-  
+
+## 8. Events & Event Emitters
+
+  ### What Are Events?
+  - Events are actions or things that happen in your program (e.g., a file finishes loading, a user clicks a button).
+
+  - Node.js uses an event-driven system to handle these actions without blocking other tasks.
+
+  ### Meet EventEmitter 🎉
+  Node.js has a built-in class called EventEmitter (from the events module) to manage events. Think of it like a walkie-talkie:
+
+  - Emitters "shout" (emit) events.
+  - Listeners "hear" (respond to) those events.
+
+  ### How to Use it: 
+  1. Create an EvenEmitter:
+
+  ```javascript
+    const EventEmitter = require('events');
+    const myEmitter = new EventEmitter();
+  ```
+
+  2. Listen for an Event:
+  Use .on() to react when an event happens:
+
+  ```javascript
+      myEmitter.on('greet', () => {
+        console.log('Hello! Someone greeted you!');
+      });  
+  ```
+  3. Trigger the Event:
+  Use .emit() to make the event happen:
+
+  ```javascript
+    myEmitter.emit('greet'); // Output: "Hello! Someone greeted you!"
+  ```
+
+  ### Key Methods Cheat Sheet 🛠️
+
+  | Method                       | What It Does                                    | Example                                    |
+  |------------------------------|-------------------------------------------------|--------------------------------------------|
+  | `.on(event, callback)`        | Listens for an event forever                    | `myEmitter.on('open', openFile)`           |
+  | `.once(event, callback)`      | Listens for an event once                       | `myEmitter.once('firstClick', handleClick)`|
+  | `.emit(event)`                | Triggers an event                               | `myEmitter.emit('error')`                  |
+  | `.removeListener(event, callback)` | Stops listening to an event               | `myEmitter.removeListener('open', openFile)`|
+
+
+  ### Example: A Friendly Greeting 🤝
+
+  ```javascript
+      const EventEmitter = require('events');
+      const emitter = new EventEmitter();
+
+      // Listen for the "sayHello" event
+      emitter.on('sayHello', (name) => {
+        console.log(`Hello, ${name}! 👋`);
+      });
+
+      // Emit the event with a name
+      emitter.emit('sayHello', 'Alice'); // Output: "Hello, Alice! 👋"
+      emitter.emit('sayHello', 'Bob');   // Output: "Hello, Bob! 👋"
+  ```
