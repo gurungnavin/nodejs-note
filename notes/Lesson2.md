@@ -11,7 +11,8 @@ npm or yarn](#2installing-npm-packages-through-npm-or-yarn)
 5. [Importing and exports modules](#5-importing-and-exports-modules)
 6. [Working with FileSystem in Node.js](#6-working-with-filesystem-in-nodejs)
 7. [HTTP Protocols](#7-http-protocols)
-8. [Events & Event Emitters](#graphql)
+8. [Events & Event Emitters](#8-events--event-emitters)
+9. []()
 
 ## 1. Initializing an npm Package
 
@@ -534,3 +535,27 @@ node index.js
       emitter.emit('sayHello', 'Alice'); // Output: "Hello, Alice! 👋"
       emitter.emit('sayHello', 'Bob');   // Output: "Hello, Bob! 👋"
   ```
+
+  ### When to Use Events? 🚀
+  - Async tasks: Like reading a file or fetching data from the internet.
+  - Repeating actions: User clicks, game updates, or chat messages.
+  - Custom workflows: Build your own event-driven systems (e.g., a pizza order tracker 🍕).
+
+  ### Tips for Success ✅
+
+  1. Always handle errors:
+
+  ```javascript
+    myEmitter.on('error', (err) => {
+      console.log('Oops! Something broke:', err);
+    });
+  ```
+  2. Avoid memory leaks: Remove listeners you no longer need.
+  3. Use .once() for one-time actions (like a welcome message)
+
+  ### Why Events Are Awesome ✨
+    - Non-blocking: Your app keeps running smoothly while waiting for events.
+    - Flexible: You can create custom events for anything!
+    - Scalable: Perfect for apps with lots of users or tasks (e.g., chat apps, games).
+
+---    
