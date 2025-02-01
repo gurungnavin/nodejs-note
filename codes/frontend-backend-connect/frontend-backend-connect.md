@@ -14,7 +14,7 @@
 
    #### OUTPUT
 
-    ```javascript
+```javascript
         {
             "name": "backend",
             "version": "1.0.0",
@@ -27,7 +27,7 @@
             "author": "",
             "license": "ISC"
         }
-    ```
+```
    
  - 2. Create `server.js` file. 
  - 3. If our file is server.js for server in 📂 `backend` then, change `"main"`
