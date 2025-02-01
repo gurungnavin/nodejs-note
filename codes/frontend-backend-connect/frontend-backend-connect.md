@@ -142,4 +142,7 @@
    }
    ```
    We have to understand this [Importing and exports modules](https://github.com/gurungnavin/backend-note/blob/main/notes/Lesson2.md#5-importing-and-exports-modules)
+
+ ### OUTPUT
+   
    
