@@ -31,9 +31,10 @@
     ```
 
  - If our file is server.js for server in 📂 `backend` then, change `"main"`
-
+    ```bash
     |--- 📄 {}packeage.json
     |--- 📄 server.js  👈
+    ```
 
     ```json
         {
