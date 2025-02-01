@@ -10,3 +10,22 @@
  ```javascript
     npm init -y
  ```
+ - It initializes a new Node.js project by creating a package.json file with default values.
+
+ - OUTPUT
+ 
+    ```javascript
+            {
+            "name": "backend",
+            "version": "1.0.0",
+            "description": "",
+            "main": "index.js",
+            "scripts": {
+                "test": "echo \"Error: no test specified\" && exit 1"
+            },
+            "keywords": [],
+            "author": "",
+            "license": "ISC"
+            }
+
+    ```
