@@ -129,3 +129,17 @@
 
    ![Screenshot 2025-02-01 at 22 02 21](https://github.com/user-attachments/assets/b081bfec-91df-446c-a149-587ff12a8f20)
 
+   #### we have fixed it by set `"type": "module"` in the `package.json`
+   ```json
+   {
+    .......
+    "main": "server.js",
+    "type": "module", 👈 add here
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    .......
+   }
+   ```
+   We have to understand this [Importing and exports modules](#5-importing-and-exports-modules)
+   
