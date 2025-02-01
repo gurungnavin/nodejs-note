@@ -143,7 +143,16 @@
    ```
    We have to understand this [Importing and exports modules](https://github.com/gurungnavin/backend-note/blob/main/notes/Lesson2.md#5-importing-and-exports-modules)
 
- ### OUTPUT
-   
+ - 7. run the Server again with command
+    ```bash
+        node server.js
+    ```
+    OR
+    ```bash
+        npm start
+    ```
+
+ ### OUTPUT ✅ 
+
  ![Screenshot 2025-02-01 at 22 39 29](https://github.com/user-attachments/assets/abf75727-ab34-4447-b674-25e96456f352)
   
