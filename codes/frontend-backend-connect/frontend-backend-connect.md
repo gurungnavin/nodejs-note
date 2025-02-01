@@ -125,3 +125,6 @@
     ```bash
     npm start
     ```
+ - 8. We may face errors related to type: module configuration.
+
+ 
