@@ -156,3 +156,43 @@
 
  ![Screenshot 2025-02-01 at 22 39 29](https://github.com/user-attachments/assets/abf75727-ab34-4447-b674-25e96456f352)
   
+ - 8. Create jokes api in server.js
+
+ ```javascript
+    app.get('/api/jokes', (req, res) => {
+
+    const jokes = [
+        {
+          "id": 1,
+          "title": "Why don't skeletons fight each other?",
+          "description": "Because they don't have the guts!"
+        },
+        {
+          "id": 2,
+          "title": "What do you get when you cross a snowman and a vampire?",
+          "description": "Frostbite! It's cold and dangerous!"
+        },
+        {
+          "id": 3,
+          "title": "Why did the scarecrow win an award?",
+          "description": "Because he was outstanding in his field, just like any great achiever!"
+        },
+        {
+          "id": 4,
+          "title": "Why don't eggs tell jokes?",
+          "description": "Because they would crack each other up! No yolk!"
+        },
+        {
+          "id": 5,
+          "title": "What did one ocean say to the other ocean?",
+          "description": "Nothing, they just waved! Waves are their way of communicating."
+        }
+      ]
+    // sending as response when user request through /api/jokes endpoints   
+    res.send(jokes);
+    });
+
+ ```
+
+ 
+
