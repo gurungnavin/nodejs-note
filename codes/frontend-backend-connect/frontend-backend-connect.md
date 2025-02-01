@@ -6,11 +6,11 @@
     |--- 📂 backend
 
 ### 2. Inside The backend.
- - write command in terminal
+ - 1. write command in terminal
  ```javascript
     npm init -y
  ```
- #### It initializes a new Node.js project by creating a package.json file with default values.
+ #### It initializes a new Node.js project by creating a `package.json` file with default values.
 
  ### OUTPUT
 
@@ -44,5 +44,5 @@
             "main": "server.js",  👈 change here
         }    
     ```
-
+ 
    
