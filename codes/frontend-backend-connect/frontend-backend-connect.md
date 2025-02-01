@@ -1,9 +1,12 @@
-# HOW TO CONNECT FRONTEND AND BACKEND IN JAVASCRIPT | FULLSTACK PROXY and CORS
+## HOW TO CONNECT FRONTEND AND BACKEND IN JAVASCRIPT | FULLSTACK PROXY and CORS
 
 ### 1. create two folder 
 
     |--- 📂 frontend
     |--- 📂 backend
+
+## BACKEND
+---
 
 ### 2. Inside The backend.
  - 1. write command in terminal
@@ -156,7 +159,7 @@
 
  ![Screenshot 2025-02-01 at 22 39 29](https://github.com/user-attachments/assets/abf75727-ab34-4447-b674-25e96456f352)
   
- - 8. Create jokes api in server.js
+ - 8. Create jokes api in `server.js`
 
  ```javascript
     app.get('/api/jokes', (req, res) => {
@@ -193,6 +196,10 @@
     });
 
  ```
+---
 
- 
+
+## FRONTEND
+---
+
 
