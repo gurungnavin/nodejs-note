@@ -126,5 +126,7 @@
     npm start
     ```
  - 8. We may face errors related to type: module configuration.
+   9. 
+![Screenshot 2025-02-01 at 21 43 17](https://github.com/user-attachments/assets/62093ea2-b8c8-4b45-af4d-72b04fe2361d)
 
  
