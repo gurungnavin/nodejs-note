@@ -30,8 +30,8 @@
 
     ```
 
- - If our file is server.js for server then, change `"main"`
-    |--- 📂 backend
+ - If our file is server.js for server in 📂 `backend` then, change `"main"`
+ 
       |--- {}packeage.json
       |--- server.js  👈
 
