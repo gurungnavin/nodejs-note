@@ -53,7 +53,7 @@
    
    ![Screenshot 2025-02-01 at 21 43 17](https://github.com/user-attachments/assets/dd4d0681-77ea-4f9d-8d72-cc9337c936c2)
 
- - Write `node server.js` inside `"scripts"` of `package.json` for start server 🎉
+ - 5. Write `"start": node server.js` inside `"scripts"` of `package.json` for start server 🎉
     ```json
           {
             "name": "backend",
@@ -65,4 +65,45 @@
             },
            ......
         }
+    ```
+
+ - 6. Inside 📄 server.js write codes.
+
+    #### 1.import express from express
+    ```javascript
+    import express from 'express';
+    ```
+
+    #### 2.save it an app variable
+    ```javascript
+    const app = express();
+    ```
+
+    #### 3.get request
+    ```javascript
+    app.get('/', (req, res) => {
+        res.send('Welcome to the backend server');
+    });
+    ```
+    #### is part of an HTTP request-response cycle using the Express.js framework. It defines a `GET` request handler for the root (/) route of our server.
+
+    #### 4.Create port.
+    ```javascript
+    const port = process.env.PORT || 4000
+    ```
+
+    #### 5.Makes the app listen for incoming requests on the specified port. This allows the server to accept HTTP requests on that port (e.g., ```http://localhost:4000```).
+    ````javascript
+    app.listen(port, () => {
+        console.log(`Server is running at http://localhost:${port}`);
+    });
+    ```
+    
+ - 7. Now run the Server with command
+    ```bash
+    node server.js
+    ```
+    OR
+    ```bash
+    npm start
     ```
