@@ -10,9 +10,9 @@
  ```javascript
     npm init -y
  ```
- - It initializes a new Node.js project by creating a package.json file with default values.
+ #### It initializes a new Node.js project by creating a package.json file with default values.
 
- - OUTPUT
+ ### OUTPUT
 
     ```javascript
         {
