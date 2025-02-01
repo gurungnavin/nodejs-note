@@ -32,8 +32,8 @@
 
  - If our file is server.js for server in 📂 `backend` then, change `"main"`
 
-    |--- {}packeage.json
-    |--- server.js  👈
+    |--- 📄 {}packeage.json
+    |--- 📄 server.js  👈
 
     ```json
         {
