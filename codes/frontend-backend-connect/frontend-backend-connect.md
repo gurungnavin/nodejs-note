@@ -29,11 +29,11 @@
         }
 
     ```
-
+ - Create `server.js` file. 
  - If our file is server.js for server in 📂 `backend` then, change `"main"`
     ```bash
     |--- 📄 {}packeage.json
-    |--- 📄 server.js  👈
+    |--- 📄 server.js  👈 
     ```
 
     ```json
@@ -44,3 +44,5 @@
             "main": "server.js",  👈 change here
         }    
     ```
+
+   
