@@ -59,7 +59,7 @@
             "name": "backend",
             "version": "1.0.0",
             "description": "",
-            "main": "index.js",
+            "main": "main.js",
             "scripts": {
                 "start": "node server.js" 👈 change here
             },
