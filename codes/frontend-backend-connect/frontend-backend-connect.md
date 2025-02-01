@@ -29,8 +29,8 @@
         }
 
     ```
- - Create `server.js` file. 
- - If our file is server.js for server in 📂 `backend` then, change `"main"`
+ - 2. Create `server.js` file. 
+ - 3. If our file is server.js for server in 📂 `backend` then, change `"main"`
     ```bash
     |--- 📄 {}packeage.json
     |--- 📄 server.js  👈 
@@ -44,5 +44,10 @@
             "main": "server.js",  👈 change here
         }    
     ```
- 
+ - 3. Install `express`
+
+    ```bash
+    npm i express
+    ```
+ - 4. File Structure will be     
    
