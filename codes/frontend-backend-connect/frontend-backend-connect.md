@@ -41,6 +41,6 @@
             "name": "backend",
             "version": "1.0.0",
             "description": "",
-            "main": "server.js", // 👈 if our filename is server.js instead of index.js
+            "main": "server.js",  👈 change here
         }    
     ```
