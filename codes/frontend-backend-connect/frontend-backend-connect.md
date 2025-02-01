@@ -5,4 +5,8 @@
     |--- 📂 frontend
     |--- 📂 backend
 
-    
+### 2. Inside The backend.
+ - write command in terminal
+ ```javascript
+    npm init -y
+ ```
