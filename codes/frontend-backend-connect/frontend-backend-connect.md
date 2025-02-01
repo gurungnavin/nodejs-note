@@ -13,9 +13,9 @@
  - It initializes a new Node.js project by creating a package.json file with default values.
 
  - OUTPUT
- 
+
     ```javascript
-            {
+        {
             "name": "backend",
             "version": "1.0.0",
             "description": "",
@@ -26,6 +26,20 @@
             "keywords": [],
             "author": "",
             "license": "ISC"
-            }
+        }
 
+    ```
+
+ - If our file is server.js for server then, change `"main"`
+    |--- 📂 backend
+      |--- {}packeage.json
+      |--- server.js  👈
+
+    ```json
+        {
+            "name": "backend",
+            "version": "1.0.0",
+            "description": "",
+            "main": "server.js", // 👈 if our filename is server.js instead of index.js
+        }    
     ```
