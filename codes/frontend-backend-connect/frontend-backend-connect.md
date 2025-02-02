@@ -215,6 +215,8 @@
 ```
 If we've already created a folder`(📂 frontend)` and want to install Vite and inside it without creating another subfolder 📂, use `.` as the project name in the command.
 
+
+
 #### OUTPUT
 
 
@@ -223,4 +225,11 @@ If we've already created a folder`(📂 frontend)` and want to install Vite and 
 
 ```bash
 npm install tailwindcss @tailwindcss/vite
+```
+
+# OR
+
+### Single Command to Install Vite + Tailwind CSS (v4.0) in an Existing Folder
+```bash
+npm create vite@latest . -- --template react && npm install tailwindcss @tailwindcss/vite
 ```
