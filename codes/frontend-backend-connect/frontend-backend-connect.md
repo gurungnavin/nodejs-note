@@ -300,6 +300,6 @@ Axios is a promise-based HTTP client for Node.js and browsers that makes it easy
 
 ```
 
-### 4. We will face CORS errors.
+### 4. We will face CORS Errors.
 
 <img width="854" alt="cors" src="https://github.com/user-attachments/assets/214e8a20-8b19-4478-b736-e98bb62719c0" />
