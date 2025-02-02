@@ -204,4 +204,23 @@
 ## FRONTEND
 ---
 
+### 1. Install vite with Tailwind cross
 
+[Vite with Tailwind](#https://tailwindcss.com/docs/installation/using-vite)
+
+#### 1. First install `Vite` with `React`
+
+```bash
+  npm create vite@latest . -- --template react
+```
+If we've already created a folder`(📂 frontend)` and want to install Vite and inside it without creating another subfolder 📂, use `.` as the project name in the command.
+
+#### OUTPUT
+
+
+
+#### 2. Install `Tailwind` inside the `React Vite`
+
+```bash
+npm install tailwindcss @tailwindcss/vite
+```
