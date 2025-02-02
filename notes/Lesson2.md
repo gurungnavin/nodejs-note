@@ -206,7 +206,7 @@ Create a Folder and open in VSCODE & Open terminal, Run the following command to
 
   // Start the server on port 3000
   server.listen(port, () => {
-    console.log('Server running at http://localhost:3000');
+    console.log('Server running at http://localhost:${port}');
   });
 
   ```
