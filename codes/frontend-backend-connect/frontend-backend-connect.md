@@ -284,4 +284,4 @@ inside `App.jsx` file, in H1 tag write `classNmae= "text-3xl font-bold underline
 if h1 is changed, it means, we successfully installed Tailwind in our projects.
 
 ### OUTPUT
-<img width="550" alt="Screenshot 2025-02-02 at 13 19 13" src="https://github.com/user-attachments/assets/f9a09f30-aa67-4cd2-b357-221a953a50ad" />
+
