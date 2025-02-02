@@ -327,7 +327,9 @@ CORS (Cross-Origin Resource Sharing) is a browser security feature that controls
 <img width="854" alt="cors" src="https://github.com/user-attachments/assets/214e8a20-8b19-4478-b736-e98bb62719c0" />
 
 ### 5. How to Solve CORS?
-Add proxy on vite.config.js
+- Add proxy on vite.config.jsx
+
+Vite's `proxy` is used during development to avoid CORS issues by forwarding requests to the backend without needing CORS setup. In production, we still need to configure CORS on the backend to allow cross-origin requests from different domains. for example `'/api': 'http://localhost:4000'`, -> `'/api': 'https://www.ourdomain.com',`
 
 ```javascript
 server : {
