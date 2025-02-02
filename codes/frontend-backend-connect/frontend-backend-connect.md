@@ -286,3 +286,18 @@ if h1 is changed, it means, we successfully installed Tailwind in our projects.
 ### OUTPUT
 <img width="550" alt="Screenshot 2025-02-02 at 13 19 13" src="https://github.com/user-attachments/assets/3fc2b338-148f-4afe-b2a8-d32352ad3fc9" />
 
+
+### 2. Install `axios` for Fetch API
+Axios is a promise-based HTTP client for Node.js and browsers that makes it easy to send and receive data from APIs.
+```bash
+  npm i axios
+```
+
+### 3. Write codes for get API Data with useEffect and Axios
+
+```javascript
+  import axios from 'axios'
+
+```
+
+### 4. We will face CORS errors.
