@@ -222,7 +222,7 @@ If we've already created a folder`(📂 frontend)` and want to install Vite and 
 ![Screenshot 2025-02-02 at 12 54 44](https://github.com/user-attachments/assets/9aa4905e-1fee-4fc1-8b70-f86596449823)
 
 
-#### 2. Install `Tailwind` inside the `React Vite`
+#### 2. Install `Tailwind` inside the `React/Vite`
 
 ```bash
 npm install tailwindcss @tailwindcss/vite
@@ -234,3 +234,53 @@ npm install tailwindcss @tailwindcss/vite
 ```bash
 npm create vite@latest . -- --template react && npm install tailwindcss @tailwindcss/vite
 ```
+
+
+#### 3. Add the @tailwindcss/vite plugin to your Vite configuration. 
+
+```javascript
+    import { defineConfig } from 'vite'
+    import react from '@vitejs/plugin-react'
+    import tailwindcss from '@tailwindcss/vite' //👈 paste here
+
+    // https://vite.dev/config/
+    export default defineConfig({
+      plugins: [
+        tailwindcss(),  // 👈 paste here
+        react()
+      ],
+    })
+
+```
+
+
+#### 4. Import Tailwind CSS
+Add an @import to our CSS file(src/index.css) that imports Tailwind CSS.
+
+```javascript
+  @import "tailwindcss";
+```
+
+#### 5. Start your build process
+
+Run this command inside the Terminal
+```bash
+  npm run dev
+```  
+
+#### 6. Open this URL on browser
+```bash
+http://localhost:5173/
+```
+
+#### 7. Start using Tailwind in your HTML
+inside `App.jsx` file, in H1 tag write `classNmae= "text-3xl font-bold underline"`
+
+```HTML
+<h1 className = "text-3xl text-red-500 font-bold">Vite + React</h1>
+```
+
+#### 8. Open browser, Check the Changes
+if h1 is changed, it means, we successfully installed Tailwind in our projects.
+
+### OUTPUT
