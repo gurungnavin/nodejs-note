@@ -219,6 +219,7 @@ If we've already created a folder`(📂 frontend)` and want to install Vite and 
 
 #### OUTPUT
 
+![Screenshot 2025-02-02 at 12 54 44](https://github.com/user-attachments/assets/9aa4905e-1fee-4fc1-8b70-f86596449823)
 
 
 #### 2. Install `Tailwind` inside the `React Vite`
