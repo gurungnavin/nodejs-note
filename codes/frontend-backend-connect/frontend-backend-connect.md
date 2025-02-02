@@ -206,7 +206,7 @@
 
 ### 1. Install vite with Tailwind cross
 
-[Vite with Tailwind](#https://tailwindcss.com/docs/installation/using-vite)
+[Vite with Tailwind visit this website](https://tailwindcss.com/docs/installation/using-vite)
 
 #### 1. First install `Vite` with `React`
 
