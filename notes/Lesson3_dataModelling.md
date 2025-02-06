@@ -127,3 +127,7 @@ Mongoose is a library that helps you work with MongoDB and Node.js. It makes it 
 - Relationships can be implemented via **references** or **embedded documents**.
 
 For detailed documentation, visit [Mongoose Official Docs](https://mongoosejs.com/).
+
+
+![TODOS_DATA_MODELLING](https://github.com/user-attachments/assets/58e77e8d-b4da-46f2-a69b-eb1e5e37fc24)
+
