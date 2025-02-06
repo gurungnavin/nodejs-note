@@ -134,7 +134,7 @@ For detailed documentation, visit [Mongoose Official Docs](https://mongoosejs.co
    ![TODOS_DATA_MODELLING](https://github.com/user-attachments/assets/58e77e8d-b4da-46f2-a69b-eb1e5e37fc24)
 
 
-  ### User model
+### User model
 
     ```javascript
       import mongoose from 'mongoose';
@@ -162,7 +162,7 @@ For detailed documentation, visit [Mongoose Official Docs](https://mongoosejs.co
       export const User = mongoose.model('User', userSchema);
     ```
 
-  ### Sub_Todo model  
+### Sub_Todo model  
 
     ```javascript
       import mongoose from 'mongoose';
@@ -188,7 +188,7 @@ For detailed documentation, visit [Mongoose Official Docs](https://mongoosejs.co
       export const SubTodo = mongoose.model('SubTodo', sub_todoSchema);
     ```
 
-  ### 1.Todo model
+### 1.Todo model
 
     ```javascript
       import mongoose from 'mongoose';
