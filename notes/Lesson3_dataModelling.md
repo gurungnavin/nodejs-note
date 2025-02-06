@@ -190,7 +190,7 @@ For detailed documentation, visit [Mongoose Official Docs](https://mongoosejs.co
 
 ### 1.Todo model
 
-    ```javascript
+  ```javascript
       import mongoose from 'mongoose';
 
       const todoSchema = new mongoose.Schema(
@@ -218,11 +218,11 @@ For detailed documentation, visit [Mongoose Official Docs](https://mongoosejs.co
       );
 
       export const Todo = mongoose.model('Todo', todoSchema);
-    ````
+  ````
     
 2. E-COMMERCE
 
-   ![EC_DATA_MODELLING](https://github.com/user-attachments/assets/2d1abdb9-e0e4-4d21-a6b0-aed2ffd94565)
+  ![EC_DATA_MODELLING](https://github.com/user-attachments/assets/2d1abdb9-e0e4-4d21-a6b0-aed2ffd94565)
 
 ### Order Model(with orderItemsSchema)
 
