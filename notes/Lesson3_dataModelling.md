@@ -128,6 +128,97 @@ Mongoose is a library that helps you work with MongoDB and Node.js. It makes it 
 
 For detailed documentation, visit [Mongoose Official Docs](https://mongoosejs.com/).
 
+## SOME EXAMPLE OF MODEL
+1. TODOS LIST
 
 ![TODOS_DATA_MODELLING](https://github.com/user-attachments/assets/58e77e8d-b4da-46f2-a69b-eb1e5e37fc24)
 
+
+### User model
+
+  ```javascript
+      import mongoose from 'mongoose';
+
+    const userSchema = new mongoose.Schema(
+      {
+        usernme: {
+          type: String,
+          required: true,
+          unique: true,
+        },
+        email: {
+          type: String,
+          required: true,
+          unique: true,
+        },
+        password: {
+          type: String,
+          required: [true, 'パスワードが必要'],
+        },
+      },
+      { timestamps: true }
+    );
+
+    export const User = mongoose.model('User', userSchema);
+
+  ```
+
+### Sub_Todo model  
+
+  ```javascript
+    import mongoose from 'mongoose';
+
+    const sub_todoSchema = new mongoose.Schema(
+      {
+        content: {
+          type: String,
+          required: true,
+        },
+        complete: {
+          type: Boolean,
+          default: false,
+        },
+        createdBy: {
+          type: mongoose.Schema.Types.ObjectId,
+          ref: 'User',
+        },
+      },
+      { timeStamps: true }
+    );
+
+    export const SubTodo = mongoose.model('SubTodo', sub_todoSchema);
+
+  ```
+
+### Todo model
+
+  ```javascript
+    import mongoose from 'mongoose';
+
+    const todoSchema = new mongoose.Schema(
+      {
+        content: {
+          type: String,
+          required: true,
+        },
+        complete: {
+          type: String,
+          default: false,
+        },
+        createdBy: {
+          type: mongoose.Schema.Types.ObjectId,
+          ref: 'User',
+        },
+        subTodo: [
+          {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'SubTodo',
+          },
+        ],
+      },
+      { timeStamps: true }
+    );
+
+    export const Todo = mongoose.model('Todo', todoSchema);
+
+  ````
