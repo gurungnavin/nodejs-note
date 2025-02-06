@@ -39,26 +39,26 @@ Mongoose is a library that helps you work with MongoDB and Node.js. It makes it 
 - A model is created from the schema and represents a collection in the database.
 
   ```javascript
-  const User = mongoose.model("User", userSchema);
+    const User = mongoose.model("User", userSchema);
 
-// OR
-// If the User model already exists, it reuses it. If not, it creates a new one using the userSchema.
-// const User = mongoose.Model.User || mongoose.model('User', userSchema);
+  // OR
+  // If the User model already exists, it reuses it. If not, it creates a new one using the userSchema.
+  // const User = mongoose.Model.User || mongoose.model('User', userSchema);
   ```
 
 ### SIMPLE STRUCTURE OF CODE,
 
-```javascript
-// 1. Import mongoose
-import mongoose from "mongoose";
+  ```javascript
+  // 1. Import mongoose
+  import mongoose from "mongoose";
 
-// 2. Create a schema (this defines the structure of the data)
-const userSchema = new mongoose.Schema({});
+  // 2. Create a schema (this defines the structure of the data)
+  const userSchema = new mongoose.Schema({});
 
-// 3. Create a model using the schema, which represents a collection (in this case, "User")
-export const User = mongoose.model("User", userSchema);
+  // 3. Create a model using the schema, which represents a collection (in this case, "User")
+  export const User = mongoose.model("User", userSchema);
 
-```
+  ```
 
 #### 5. Saving Data to MongoDB
 
