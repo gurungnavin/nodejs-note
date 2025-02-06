@@ -136,7 +136,7 @@ For detailed documentation, visit [Mongoose Official Docs](https://mongoosejs.co
 
 ### User model
 
-    ```javascript
+  ```javascript
       import mongoose from 'mongoose';
 
       const userSchema = new mongoose.Schema(
@@ -160,11 +160,11 @@ For detailed documentation, visit [Mongoose Official Docs](https://mongoosejs.co
       );
 
       export const User = mongoose.model('User', userSchema);
-    ```
+  ```
 
 ### Sub_Todo model  
 
-    ```javascript
+  ```javascript
       import mongoose from 'mongoose';
 
       const sub_todoSchema = new mongoose.Schema(
@@ -186,7 +186,7 @@ For detailed documentation, visit [Mongoose Official Docs](https://mongoosejs.co
       );
 
       export const SubTodo = mongoose.model('SubTodo', sub_todoSchema);
-    ```
+  ```
 
 ### 1.Todo model
 
