@@ -224,4 +224,5 @@ For detailed documentation, visit [Mongoose Official Docs](https://mongoosejs.co
   ````
 2. E-COMMERCE
 
+![EC_DATA_MODELLING](https://github.com/user-attachments/assets/f38035a3-99fe-42ef-b90d-7c484fe80ac8)
 
