@@ -131,7 +131,7 @@ For detailed documentation, visit [Mongoose Official Docs](https://mongoosejs.co
 ## SOME EXAMPLE OF MODEL
 1. TODOS LIST
 
-  ![TODOS_DATA_MODELLING](https://github.com/user-attachments/assets/58e77e8d-b4da-46f2-a69b-eb1e5e37fc24)
+   ![TODOS_DATA_MODELLING](https://github.com/user-attachments/assets/58e77e8d-b4da-46f2-a69b-eb1e5e37fc24)
 
 
   ### User model
