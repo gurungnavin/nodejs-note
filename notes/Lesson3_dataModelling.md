@@ -131,7 +131,7 @@ For detailed documentation, visit [Mongoose Official Docs](https://mongoosejs.co
 ## SOME EXAMPLE OF MODEL
 1. TODOS LIST
 
-![TODOS_DATA_MODELLING](https://github.com/user-attachments/assets/58e77e8d-b4da-46f2-a69b-eb1e5e37fc24)
+   ![TODOS_DATA_MODELLING](https://github.com/user-attachments/assets/58e77e8d-b4da-46f2-a69b-eb1e5e37fc24)
 
 
   ### User model
@@ -224,5 +224,141 @@ For detailed documentation, visit [Mongoose Official Docs](https://mongoosejs.co
     
 2. E-COMMERCE
 
-![EC_DATA_MODELLING](https://github.com/user-attachments/assets/2d1abdb9-e0e4-4d21-a6b0-aed2ffd94565)
+   ![EC_DATA_MODELLING](https://github.com/user-attachments/assets/2d1abdb9-e0e4-4d21-a6b0-aed2ffd94565)
 
+### Order Model(with orderItemsSchema)
+
+    ```javascript
+    import mongoose from 'mongoose';
+
+    const orderItemsSchema = new mongoose.Schema({
+      productId: {
+        type: mongoose.Schema.Types.ObjectId,
+        required: true,
+      },
+      quantity: {
+        type: Number,
+        required: true,
+      },
+    });
+
+    const orderSchema = new mongoose.Schema(
+      {
+        orderPrice: {
+          type: String,
+          required: true,
+        },
+        customer: {
+          type: mongoose.Schema.Types.ObjectId,
+          ref: 'User',
+          required: true,
+        },
+        orderItems: [orderItemsSchema],
+        address: {
+          type: String,
+          required: true,
+        },
+        status: {
+          type: String,
+          enum: ['PENDING', 'DELIVERED', 'COMPLETE'],
+          default: 'PENDING',
+        },
+      },
+
+      { timestamps: true }
+    );
+
+    export const Order = mongoose.model('Order', orderSchema);
+
+    ```
+
+### Category Model
+
+    ```javascript
+    import mongoose from 'mongoose';
+
+    const categorySchema = new mongoose.Schema(
+      {
+        name: {
+          type: String,
+          required: true,
+        },
+      },
+      { timestamps: true }
+    );
+
+    export const Category = mongoose.model('Category', categorySchema);
+    ```
+
+### Product Model
+
+    ```javascript
+    import mongoose from 'mongoose';
+
+    const productSchema = new mongoose.Schema(
+      {
+        name: {
+          type: String,
+          required: true,
+        },
+        description: {
+          type: String,
+          required: true,
+        },
+        productImage: {
+          type: Array,
+          required: true,
+        },
+        price: {
+          type: Number,
+          default: '0円',
+        },
+        stock: {
+          type: Number,
+          default: 0,
+        },
+        category: {
+          type: mongoose.Schema.Types.ObjectId,
+          ref: 'Category',
+          required: true,
+        },
+        owner: {
+          type: mongoose.Schema.Types.ObjectId,
+          ref: 'User',
+        },
+      },
+      { timestamps: true }
+    );
+
+    export const Product = mongoose.model('Product', productSchema);
+
+    ```
+### User Model
+
+```javascript
+    import mongoose from 'mongoose';
+
+    const userSchema = new mongoose.Schema(
+      {
+        username: {
+          type: String,
+          required: true,
+          unique: true,
+          lowercase: true,
+        },
+        email: {
+          type: String,
+          required: true,
+          lowercase: true,
+        },
+        password: {
+          type: String,
+          required: true,
+        },
+      },
+      { timestamps: true }
+    );
+
+    export const User = mongoose.model('User', userSchema);
+
+    ```
