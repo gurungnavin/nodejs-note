@@ -228,7 +228,7 @@ For detailed documentation, visit [Mongoose Official Docs](https://mongoosejs.co
 
 ### Order Model(with orderItemsSchema)
 
-    ```javascript
+  ```javascript
     import mongoose from 'mongoose';
 
     const orderItemsSchema = new mongoose.Schema({
@@ -270,11 +270,11 @@ For detailed documentation, visit [Mongoose Official Docs](https://mongoosejs.co
 
     export const Order = mongoose.model('Order', orderSchema);
 
-    ```
+  ```
 
 ### Category Model
 
-    ```javascript
+  ```javascript
     import mongoose from 'mongoose';
 
     const categorySchema = new mongoose.Schema(
@@ -288,11 +288,11 @@ For detailed documentation, visit [Mongoose Official Docs](https://mongoosejs.co
     );
 
     export const Category = mongoose.model('Category', categorySchema);
-    ```
+  ```
 
 ### Product Model
 
-    ```javascript
+  ```javascript
     import mongoose from 'mongoose';
 
     const productSchema = new mongoose.Schema(
@@ -332,10 +332,10 @@ For detailed documentation, visit [Mongoose Official Docs](https://mongoosejs.co
 
     export const Product = mongoose.model('Product', productSchema);
 
-    ```
+  ```
 ### User Model
 
-```javascript
+  ```javascript
     import mongoose from 'mongoose';
 
     const userSchema = new mongoose.Schema(
@@ -360,5 +360,4 @@ For detailed documentation, visit [Mongoose Official Docs](https://mongoosejs.co
     );
 
     export const User = mongoose.model('User', userSchema);
-
-    ```
+  ```
