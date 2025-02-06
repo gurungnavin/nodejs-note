@@ -137,7 +137,7 @@ For detailed documentation, visit [Mongoose Official Docs](https://mongoosejs.co
 ### User model
 
   ```javascript
-      import mongoose from 'mongoose';
+    import mongoose from 'mongoose';
 
     const userSchema = new mongoose.Schema(
       {
@@ -190,7 +190,7 @@ For detailed documentation, visit [Mongoose Official Docs](https://mongoosejs.co
 
   ```
 
-### Todo model
+### 1.Todo model
 
   ```javascript
     import mongoose from 'mongoose';
@@ -222,3 +222,6 @@ For detailed documentation, visit [Mongoose Official Docs](https://mongoosejs.co
     export const Todo = mongoose.model('Todo', todoSchema);
 
   ````
+2. E-COMMERCE
+
+
