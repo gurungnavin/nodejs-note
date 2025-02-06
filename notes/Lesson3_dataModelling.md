@@ -44,7 +44,7 @@ Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node.js. It si
   const User = mongoose.model("User", userSchema);
 
   // OR
-  //If the User model already exists, it reuses it (mongoose.Model.User). If not, it creates a new model using the userSchema.
+  //If the User model already exists, it reuses(mongoose.Model.User). If not, it creates a new model using the userSchema.
   //const User =  mongoose.Model.User || mongoose.model('User', userSchema);
   ```
 
@@ -54,10 +54,10 @@ Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node.js. It si
 // 1. import mongoose
 import mongoose from "mongoose";
 
-// 2. create schema
+// 2. Create schema
 const userSchema = new mongoose.Schema({});
 
-// 3. wrap schema and represent a collectoion(for here: User)
+// 3. Create model and wrap schema and represent a collectoion(for here: User)
 export const User = mongoose.model("User", userSchema);
 ```
 
