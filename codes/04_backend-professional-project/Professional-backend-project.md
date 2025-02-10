@@ -24,7 +24,7 @@ npm init -y
 ```
 ---
 ### b. Create file name `.gitignore` & `.env`
-- `.gitignore`: Tells Git which files not to track (e.g., sensitive data like .env, node_modules, logs). We can generate `.gitignore` content with [.gitignore generation](#https://www.toptal.com/developers/gitignore)
+- `.gitignore`: Tells Git which files not to track (e.g., sensitive data like .env, node_modules, logs). We can generate `.gitignore` content with [.gitignore generation](https://www.toptal.com/developers/gitignore)
 - `.env` : Stores sensitive environment variables (like API keys, passwords) locally so we don’t expose them in our code.
 
 ---
