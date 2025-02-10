@@ -68,3 +68,25 @@ npm init -y
 ```
 
 ---
+
+### e. Set `"type": "module"` and `nodemon`
+
+- In your `package.json`, add `"type": "module"` to enable ECMAScript modules (ESM) in Node.js. This allows us to use `import` and `export` syntax instead of `require` and `module.exports` for importing and exporting modules. Simply place it at the top level of your `package.json` like this:
+
+```json
+{
+  "type": "module"
+}
+```
+
+- To use `nodemon`, install it as a development dependency by running `npm install --save-dev nodemon`. Then, in our `package.json`, add a script to run our app with nodemon for automatic restarts during development. For example:
+
+```json
+{
+  "scripts": {
+    "dev": "nodemon index.js"
+  }
+}
+
+```
+---
