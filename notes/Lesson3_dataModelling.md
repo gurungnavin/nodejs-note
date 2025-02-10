@@ -177,10 +177,10 @@ For detailed documentation, visit [Mongoose Official Docs](https://mongoosejs.co
             type: Boolean,
             default: false,
           },
-          createdBy: {
+          createdBy: [{
             type: mongoose.Schema.Types.ObjectId,
             ref: 'User',
-          },
+          }],
         },
         { timeStamps: true }
       );
@@ -203,10 +203,10 @@ For detailed documentation, visit [Mongoose Official Docs](https://mongoosejs.co
             type: String,
             default: false,
           },
-          createdBy: {
+          createdBy: [{
             type: mongoose.Schema.Types.ObjectId,
             ref: 'User',
-          },
+          }],
           subTodo: [
             {
               type: mongoose.Schema.Types.ObjectId,
@@ -246,11 +246,11 @@ For detailed documentation, visit [Mongoose Official Docs](https://mongoosejs.co
           type: String,
           required: true,
         },
-        customer: {
+        customer: [{
           type: mongoose.Schema.Types.ObjectId,
           ref: 'User',
           required: true,
-        },
+        }],
         orderItems: [orderItemsSchema],
         address: {
           type: String,
@@ -315,15 +315,15 @@ For detailed documentation, visit [Mongoose Official Docs](https://mongoosejs.co
           type: Number,
           default: 0,
         },
-        category: {
+        category: [{
           type: mongoose.Schema.Types.ObjectId,
           ref: 'Category',
           required: true,
-        },
-        owner: {
+        }],
+        owner: [{
           type: mongoose.Schema.Types.ObjectId,
           ref: 'User',
-        },
+        }],
       },
       { timestamps: true }
     );
