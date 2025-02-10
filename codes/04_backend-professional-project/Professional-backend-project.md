@@ -34,14 +34,21 @@ npm init -y
 
 - `.gitkeep`: A placeholder file used to make sure Git tracks the empty public/temp/ folder. Git does not track empty directories, so `.gitkeep` forces Git to recognize and track the folder's existence in the repository.
 
+```css
+📁 public/
+├── 📁 temp/
+      ├──📄 .gitkeep
+```
+
 ---
 
 ### d. Create `src/` Directory & `app.js`, `constants.js` & `index.js` insde `src` folder
 
 ```css
-src/
-├── app.js
-├── constants.js
-└── index.js
+📁 src/
+├── 📄 app.js
+├── 📄 constants.js
+└── 📄 index.js
+
 ```
 ---
