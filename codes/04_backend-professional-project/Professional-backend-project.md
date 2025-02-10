@@ -1,7 +1,7 @@
 ## Professional Backend Project SetUp
 
 1. How to Setup a professional backend project
-
+---
 ### a. initailized npm package
 ```bash
 npm init -y
@@ -29,4 +29,9 @@ npm init -y
 
 ---
 
-### c. Create file name `.gitignore` & `.env`
+### c. Create `public/temp/` Directory & `.gitkeep`
+- `public/temp/`: A directory for storing temporary files that are publicly accessible (e.g., uploaded files, cache, session data). Files in this directory might be deleted or regenerated as needed.
+
+- `.gitkeep`: A placeholder file used to make sure Git tracks the empty public/temp/ folder. Git does not track empty directories, so `.gitkeep` forces Git to recognize and track the folder's existence in the repository.
+
+---
