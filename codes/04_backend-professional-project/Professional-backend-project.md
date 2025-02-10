@@ -52,3 +52,19 @@ npm init -y
 
 ```
 ---
+
+### Final Folder STRUCTURE
+```pqsql
+📁 public/
+├── 📁 temp/
+│   └── 📄 .gitkeep
+📁 src/
+├── 📄 app.js
+├── 📄 constants.js
+└── 📄 index.js
+📄 .env
+📄 .gitignore
+📄 package.json
+```
+
+---
