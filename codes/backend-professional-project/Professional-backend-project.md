@@ -8,7 +8,7 @@ npm init -y
 ```
 
 ### OUTPUT
-```javascript
+```json
     {
       "name": "backend-professional-project",
       "version": "1.0.0",
