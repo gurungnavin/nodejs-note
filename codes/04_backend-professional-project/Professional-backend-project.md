@@ -91,6 +91,13 @@ npm init -y
 ```
 ---
 ### f. Create 6 Directories(folders) inside the`src/` folder.
+- `controllers/` – Handles requests and responses (main logic).
+- `db/` – Manages database connections.
+- `middlewares/` – Adds extra processing (e.g., authentication).
+- `models/` – Defines database structure (data format).
+- `routes/` – Maps URLs to controller functions.
+- `utils/` – Stores reusable helper functions.
+
 ```css
 
 📁 src/
