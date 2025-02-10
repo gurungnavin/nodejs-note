@@ -79,7 +79,7 @@ npm init -y
 }
 ```
 
-- To use `nodemon`, install it as a development dependency by running `npm install --save-dev nodemon`. Then, in our `package.json`, add a script to run our app with nodemon for automatic restarts during development. For example:
+- To use `nodemon`, install it as a development dependency by running `npm install --save-dev nodemon`. Then, in our `package.json`, add a script to run our app with nodemon(`npm run dev`) for automatic restarts during development. For example:
 
 ```json
 {
