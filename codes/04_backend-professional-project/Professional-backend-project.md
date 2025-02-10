@@ -113,3 +113,34 @@ npm init -y
 
 ```
 ---
+### g. Install `prettier/` dev dedev dependency.
+```bash
+npm i prettier -D
+```
+- Prettier helps teams by ensuring consistent code formatting, reducing conflicts in pull requests, and making collaboration smoother. It saves time on code reviews and keeps the codebase clean and readable. 🚀
+
+> [!IMPORTANT]
+> We have to create and set up some files manually for Prettier:
+- `.prettierrc`
+> Configures Prettier's formatting rules (e.g., quotes, semicolons) for consistent code style across the project.
+
+```json
+    {
+      "singleQuote": false,
+      "bracketSpacing": true,
+      "tabWidth": 2,
+      "semi": true,
+      "trailingComma": "es5"
+    }
+```
+- `.prettierignore`
+> Specifies files or folders for Prettier to ignore (e.g., node_modules, build files, .env), preventing unnecessary formatting on non-source files.
+
+```bash
+    .vscode/
+    node_modules/
+    dist/
+    *.env
+    .env
+    .env.*
+```
