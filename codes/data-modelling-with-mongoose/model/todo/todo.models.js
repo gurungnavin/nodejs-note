@@ -9,14 +9,14 @@ const todoSchema = new monggose.Schema({
       type : Boolean,
       default: false,  
     },
-    createdBy : {
+    createdBy : [{
         type: mongoose.Schema.Types.ObjectId,
         ref: "User",
-    },
-    subTodo : {
+    }],
+    subTodo : [{
         type: mongoose.Schema.Types.ObjectId,
         ref: "Sub_todo",
-    }
+    }]
 
 },{timestamps: true})
 

@@ -17,11 +17,13 @@ const orderSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    customer: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: 'User',
-      required: true,
-    },
+    customer: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User',
+        required: true,
+      }
+    ],
     orderItems: [orderItemsSchema],
     address: {
       type: String,
