@@ -24,7 +24,7 @@ npm init -y
 ```
 ---
 ### b. Create file name `.gitignore` & `.env`
-- `.gitignore`: Tells Git which files not to track (e.g., sensitive data like .env, node_modules, logs).
+- `.gitignore`: Tells Git which files not to track (e.g., sensitive data like .env, node_modules, logs). We can generate `.gitignore` content with [.gitignore generation](#https://www.toptal.com/developers/gitignore)
 - `.env` : Stores sensitive environment variables (like API keys, passwords) locally so we don’t expose them in our code.
 
 ---
@@ -35,3 +35,5 @@ npm init -y
 - `.gitkeep`: A placeholder file used to make sure Git tracks the empty public/temp/ folder. Git does not track empty directories, so `.gitkeep` forces Git to recognize and track the folder's existence in the repository.
 
 ---
+
+### d. Create `src/` Directory & `.gitkeep`
