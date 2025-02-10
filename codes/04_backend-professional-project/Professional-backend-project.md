@@ -90,3 +90,19 @@ npm init -y
 
 ```
 ---
+### f. Create 6 Directories(folders) inside the`src/` folder.
+```css
+
+📁 src/
+├── 📁 controllers/
+├── 📁 db/
+├── 📁 middlewares/
+├── 📁 models/
+├── 📁 routes/
+├── 📁 utils/
+├── 📄 app.js
+├── 📄 constants.js
+└── 📄 index.js
+
+```
+---
