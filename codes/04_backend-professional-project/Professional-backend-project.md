@@ -1,6 +1,6 @@
 ## Professional Backend Project SetUp
 
-1. How to Setup a professional backend project
+## 1. How to Setup a professional backend project
 ---
 ### a. initailized npm package
 ```bash
