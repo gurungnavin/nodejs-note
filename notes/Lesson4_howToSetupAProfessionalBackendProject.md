@@ -146,6 +146,6 @@ npm i prettier -D
 ```
 ---
 ### 🔥 Conclusion
-By following this setup, your backend project will be well-structured, scalable, and easy to maintain. Proper folder organization, nodemon for auto-restarts, ESM modules, and Prettier for clean code ensure professional and efficient development. 🚀
+By following this setup, our backend project will be well-structured, scalable, and easy to maintain. Proper folder organization, nodemon for auto-restarts, ESM modules, and Prettier for clean code ensure professional and efficient development. 🚀
 
 ---
