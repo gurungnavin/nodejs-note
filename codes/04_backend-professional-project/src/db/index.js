@@ -1,14 +1,14 @@
 import mongoose from "mongoose"
+import {DB_NAME} from "../constants.js"
+
 
 const connectDB = async () => {
   try {
-    mongoose.connect.on('connect', () => {
-      console.log("DB connected");
-    })
-    await mongoose.connect(`${process.env.MONGODB_URI}/e-commerce`)
+      await mongoose.connect(`${process.env.MONGODB_URI}/${DB_NAME}`)
+      console.log("Database COnnected");
+      
   } catch (error) {
-    console.log(error.message);
-    
+    console.log(error.message)
   }
 }
 

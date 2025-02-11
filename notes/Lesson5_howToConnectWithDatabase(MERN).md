@@ -18,7 +18,7 @@
    - ✅ Choose **Drivers**  
    - ✅ Copy the **connection string** and use it in your application  
 
-Example Connection String (Node.js Driver):
+### Example Connection String (Node.js Driver):
 ```bash
 mongodb+srv://<db_username>:<db_password>@cluster0.oug1p.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
 ```
