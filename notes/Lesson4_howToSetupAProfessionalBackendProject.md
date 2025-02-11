@@ -44,6 +44,9 @@ npm init -y
 
 ### d. Create `src/` Directory & `app.js`, `constants.js` & `index.js` insde `src` folder
 
+- `app.js` → Sets up the main backend application (e.g., routes, middleware).
+- `constants.js` → Stores fixed values like API keys, messages, or settings.
+- `index.js` → The starting point of the backend; runs the server using app.js.
 ```css
 📁 src/
 ├── 📄 app.js
