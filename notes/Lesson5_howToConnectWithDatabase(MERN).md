@@ -7,13 +7,13 @@
     - Create a username & password
     - Allow IP access (0.0.0.0/0 for open access)
 - 5. Finish setup & close
-  - Modify IP access later → Go to Security → Network Access
-  - Add new database users → Go to Security → Database Access
+[ ] Modify IP access later → Go to Security → Network Access
+[x] Add new database users → Go to Security → Database Access
 
 - 6. Go to Database → Clusters
-  - Click Connect to Cluster0
-  - Choose Drivers
-  - Copy the connection string and use it in your application
+    - Click Connect to Cluster0
+    - Choose Drivers
+    - Copy the connection string and use it in your application
 
 Example Connection String (Node.js Driver):
 ```bash
