@@ -1,5 +1,7 @@
 ## 🔥 How to Connect Database in MERN (with Debugging)
 
+### DATABASE(MongoDB Atlas)
+---
 1. ✅ **Sign in to MongoDB Atlas**  
 2. ✅ **Create a new project** (choose a name)  
 3. ✅ **Select a free tier** → Choose **AWS & a region**, then create  
