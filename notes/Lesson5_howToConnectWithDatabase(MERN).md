@@ -30,6 +30,10 @@ mongodb+srv://<db_username>:<db_password>@cluster0.oug1p.mongodb.net/?retryWrite
 
 This setup ensures a successful MongoDB Atlas connection in a MERN app! 🚀
 
+
+### BACKEND FOLDER 📁
+---
+
 7. ✅ **Go to Backend Folder** 
 ### In this folder, we will install the required dependencies
 ### - `express`, `mongoose`, `dotenv`
