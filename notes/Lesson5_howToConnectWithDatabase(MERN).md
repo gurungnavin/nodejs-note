@@ -63,7 +63,7 @@ npm i express mongoose dotenv
 
 ```javascript
    PORT = 8000
-   MONGODB_URI = "mongodb+srv://navingurung67:your-password3@cluster0.oug1p.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+   MONGODB_URI = "mongodb+srv://<db_username>:<db_password>@cluster0.oug1p.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 ```
 9. ✅ **📁src/ constants.js**
  - Set the DB_NAME in constants.js:
