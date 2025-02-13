@@ -6,7 +6,7 @@ const port = process.env.PORT || 8000
 connectDB()
 .then(()=> {
   app.listen(port, ()=> {
-    console.log(`Server is running at http://localhost:${port}`);
+    console.log(`サーバー動作中です at http://localhost:${port}`);
   })
 })
 .catch((err) => {
