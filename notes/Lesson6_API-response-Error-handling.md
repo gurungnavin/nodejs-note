@@ -16,3 +16,8 @@ Custom error handling is a technique used to manage errors consistently and effe
 - **Consistency**: Provides a consistent approach to handle errors across the application.
 - **Efficiency**: Saves time by streamlining how errors are managed.
 - **Reliability**: Ensures your app is robust and resilient to issues, preventing unexpected crashes and bugs.
+
+
+### UTILS FOLDER 📁
+
+#### 1. Create asyncHandler.js
