@@ -1,4 +1,4 @@
-## Custome api response and error handling
+## Custom api response and error handling
 Custom error handling is a technique used to manage errors consistently and effectively throughout an application. It ensures that errors are caught, handled, and addressed in a structured way, preventing them from affecting the user experience or causing unexpected behavior.
 
 ### Benefits of Custom Error Handling
@@ -86,3 +86,69 @@ We will create an `asyncHandler` that handles asynchronous code in Express using
 ### Key Points:
 - **Promise version**: Handles asynchronous functions and passes errors to the next middleware.
 - **Try-catch version**: Handles async functions with error responses directly in the `catch` block.
+
+
+#### 2. Create ApiResponse.js
+The `ApiResponse` class is used to structure API responses with a consistent format.
+
+```javascript
+  class ApiResponse {
+    constructor(
+      statusCode, data, message = "SUCCESS"
+    )
+    {
+      this.statusCode = statusCode;  // HTTP status code (e.g., 200, 404)
+      this.data = data;              // The response data
+      this.message = message;        // Optional message (default: "SUCCESS")
+      this.success = statusCode
+    }
+  }
+
+
+  export {ApiResponse}
+  ```
+### Explanation of `ApiResponse`
+- statusCode: Represents the HTTP status code (e.g., 200 for success or 404 for not found).
+- data: Contains the data or content returned by the API.
+- message: An optional message providing more info (defaults to "SUCCESS").
+- success: A boolean that checks if the response is successful based on the status code. If the code is between 200 and 299, it’s true; otherwise, false.
+
+
+#### 3. Create ApiError.js
+The `ApiError` class is used to handle errors in your API with custom messages, status codes, and optional error details.
+
+```javascript
+  class ApiError extends Error {
+    constructor(
+      statusCode,
+      message = "Something went wrong",
+      errors = [],
+      stack = ""
+    ){
+      super(message)
+      this.statusCode = statusCode
+      this.data = null
+      this.message = message
+      this.success = this.success
+      this.errors = errors
+
+      if(stack) {
+        this.stack = stack
+      }
+      else {
+        Error.captureStaackTrace(this, this.constructor)
+      }
+    }
+  }
+
+
+  export {ApiError}
+```
+### Explanation
+
+- **super(message)**: Calls the parent `Error` class to set the message and capture the stack trace.
+- **statusCode**: The HTTP error code (like `404` for "Not Found").
+- **message**: The error message (default is `"Something went wrong"`).
+- **success**: Always `false` because it's an error response.
+- **errors**: An optional list of extra details about the error.
+- **stack**: Tracks where the error happened. It can be custom or auto-generated.
