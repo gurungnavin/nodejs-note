@@ -146,7 +146,7 @@ The `ApiError` class is used to handle errors in your API with custom messages, 
 ```
 ### Explanation
 
-- **super(message)**: Calls the parent `Error` class to set the message and capture the stack trace.
+- **super(message)**: Calls the parent Error class constructor to set the message, which overrides the default error message.
 - **statusCode**: The HTTP error code (like `404` for "Not Found").
 - **message**: The error message (default is `"Something went wrong"`).
 - **success**: Always `false` because it's an error response.
