@@ -21,3 +21,68 @@ Custom error handling is a technique used to manage errors consistently and effe
 ### UTILS FOLDER 📁
 
 #### 1. Create asyncHandler.js
+We will create an `asyncHandler` that handles asynchronous code in Express using either `Promise` or `try-catch`.
+
+- With `Promise`
+```javascript
+  const asyncHandler = (reqestHandler) => {
+    (req, res, next) => {
+      Promise.resolve(reqestHandler(req, res, next)).catch((err) => next(err))
+    }
+  }
+
+  export {asyncHandler}
+
+```
+### Explanation(`Promise`):
+
+1. **Arrow Function**:
+   - `asyncHandler` is an arrow function that takes `requestHandler` as an argument.
+   - The `requestHandler` is the asynchronous function that will be executed.
+
+2. **Parameters**:
+   - `req`: The request object.
+   - `res`: The response object.
+   - `next`: The next middleware function (used if an error occurs).
+
+3. **Promise Handling**:
+   - `Promise.resolve(requestHandler(req, res, next))`: Ensures that the `requestHandler` returns a resolved promise, whether it's asynchronous or not.
+   - `.catch((err) => next(err))`: If an error occurs, it is passed to the next middleware using `next(err)`.
+
+4. **Export**:
+   - The `asyncHandler` function is exported for use in other parts of your application.
+
+- With `tryCatch`
+
+```javascript
+  const asyncHandler = (func) => async(req, res, next) => {
+    try {
+      await func(req, req, next)
+    } catch (error) {
+      res.status(error.code || 500).json({
+        success : false,
+        message: error.message
+      })
+    }
+  }
+```
+### Explanation(`tryCatch`)
+
+1. **Function Execution**:
+   - `asyncHandler` takes an async function (`func`) and returns a new async function that wraps it.
+
+2. **Error Handling**:
+   - It tries to run the async function (`await func(req, res, next)`).
+   - If any error occurs, it catches it in the `catch` block.
+
+3. **Error Response**:
+   - The error response is sent with a `500` status code (or the custom error code) and a message.
+
+4. **Usage**:
+   - The handler ensures that any errors from the async function are caught and returned as a structured JSON response.
+
+
+
+### Key Points:
+- **Promise version**: Handles asynchronous functions and passes errors to the next middleware.
+- **Try-catch version**: Handles async functions with error responses directly in the `catch` block.
