@@ -1,10 +1,10 @@
- import { asyncHandler } from "../utils/asyncHandler.js"
+import { asyncHandler } from "../utils/asyncHandler.js"
 
-
- const registerUser = asyncHandler(async (req, res) => {
+const userRegister = asyncHandler(async(req, res) => {
     res.status(200).json({
-      message: "API:アカウント登録を確認できました。"
+      message : "Api実行中です。"
     })
- })
+})
 
- export {registerUser}
+
+export {userRegister}
